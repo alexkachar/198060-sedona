@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Качар](https://up.htmlacademy.ru/adaptive/12/user/198060).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Козлов](https://htmlacademy.ru/profile/id27386).
 
 ---
 
