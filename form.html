@@ -39,33 +39,33 @@
 
         <section class="feedback">
           <h2 class="visually-hidden">Форма отзыва</h2>
-          <form class="feedback__form" action="get">
+          <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
 
             <fieldset class="feedback__fieldset">
-              <p class="feedback__caption">Представьтесь</p>
+              <p class="feedback__caption">Представьтесь:</p>
               <p class="feedback__field-wrapper">
-                ИМЯ*:
-                <input class="input-text" id="name" type="text" placeholder="Петр">
+                <label for="first-name">ИМЯ*:</label>
+                <input class="input-text" id="first-name" name="first-name" type="text" placeholder="Петр" required>
               </p>
               <p class="feedback__field-wrapper">
-                ФАМИЛИЯ*:
-                <input class="input-text" id="family-name" type="text" placeholder="Иванов">
+                <label for="family-name">ФАМИЛИЯ*:</label>
+                <input class="input-text" id="family-name" name="family-name" type="text" placeholder="Иванов" required>
               </p>
               <p class="feedback__field-wrapper">
-                Отчество:
-                <input class="input-text" id="patronymic" type="text" placeholder="Александрович">
+                <label for="patronymic">Отчество:</label>
+                <input class="input-text" id="patronymic" name="patronymic" type="text" placeholder="Александрович">
               </p>
             </fieldset>
 
             <fieldset class="feedback__fieldset">
               <p class="feedback__caption">Контактная информация:</p>
               <p class="feedback__field-wrapper">
-                Контактный телефон*:
-                <input class="input-text input-text--telephone" id="telephone" type="text" placeholder="Введите телефон">
+                <label for="telephone">Контактный телефон*:</label>
+                <input class="input-text input-text--telephone" id="telephone" name="telephone" type="text" placeholder="Введите телефон" required>
               </p>
               <p class="feedback__field-wrapper">
-                Электронная почта*:
-                <input class="input-text input-text--email" id="email" type="text" placeholder="Введите e-mail">
+                <label for="email">Электронная почта*:</label>
+                <input class="input-text input-text--email" id="email" name="email" type="text" placeholder="Введите e-mail" required>
               </p>
             </fieldset>
 
@@ -74,19 +74,19 @@
               <ul class="input-list">
                 <li class="input-list__item">
                   <label for="postitive">
-                    <input class="radio" type="radio" id="postitive">
+                    <input class="radio" id="postitive" name="impression" value="positive" type="radio">
                     <span class="radio-label">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="input-list__item">
                   <label for="negative">
-                    <input class="radio" type="radio" id="negative">
+                    <input class="radio" id="negative" name="impression" value="negative" type="radio">
                     <span class="radio-label">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="input-list__item">
                   <label for="difficult">
-                    <input class="radio" type="radio" id="difficult">
+                    <input class="radio" id="difficult" name="impression" value="difficult" type="radio">
                     <span class="radio-label">Затрудняюсь ответить</span>
                   </label>
                 </li>
@@ -98,25 +98,25 @@
               <ul class="input-list">
                 <li class="input-list__item">
                   <label for="devils-bridge">
-                    <input class="checkbox" id="devils-bridge" type="checkbox">
+                    <input class="checkbox" id="devils-bridge" name="devils-bridge" type="checkbox">
                     <span class="checkbox-label">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="input-list__item">
                   <label for="slide-park">
-                    <input class="checkbox" id="slide-park" type="checkbox">
+                    <input class="checkbox" id="slide-park" name="slide-park" type="checkbox">
                     <span class="checkbox-label">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="input-list__item">
                   <label for="bell-mount">
-                    <input class="checkbox" id="bell-mount" type="checkbox">
+                    <input class="checkbox" id="bell-mount" name="bell-mount" type="checkbox">
                     <span class="checkbox-label">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="input-list__item">
                   <label for="red-rocks">
-                    <input class="checkbox" id="red-rocks" type="checkbox">
+                    <input class="checkbox" id="red-rocks" name="red-rocks" type="checkbox">
                     <span class="checkbox-label">Красные скалы</span>
                   </label>
                 </li>
@@ -125,7 +125,7 @@
 
             <fieldset class="feedback__fieldset">
               <p class="fielset__caption">Опишите свои эмоции:</p>
-              <textarea name="feedback-text" rows="120" cols="80">Опишите подробно все свои восторги</textarea>
+              <textarea class="feedback-text" id="feedback-text" name="feedback-text" rows="5" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
               <button class="btn btn--blue" type="submit" id="feedback-submit">Отправить отзыв</button>
             </fieldset>
 
