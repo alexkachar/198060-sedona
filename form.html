@@ -2,17 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона / Оставьте свой отзыв</title>
   </head>
   <body>
     <div class="page-wrapper">
       <header class="page-header">
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button" aria-label="открыть">Открыть меню</button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="photo.html" >Фото и видео</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html" >Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="photo.html" >Фото и&nbsp;видео</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="form.html" >Форма отзыва</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" >HTML Academy</a></li>
             </ul>
@@ -25,52 +25,50 @@
 
       <main class="page-main">
 
-        <section class="intro intro--inner">
-          <h1 class="visually-hidden">Welcome to the gorgeus Sedona!</h1>
-          <figure class="into__text">
-            <img class="intro__text-img" src="http://placehold.it/150x100" alt="Because the Grand Canyon Sucks!">
-          </figure>
+        <section class="intro">
+          <h2 class="visually-hidden">Welcome to&nbsp;the gorgeus Sedona!</h2>
+          <svg class="intro__svg" src="http://placehold.it/150x100" aria-labelledby="Because the Grand Canyon Sucks!">
         </section>
 
-        <section class="info info--inner">
-          <h2 class="info__caption">Оставьте свой отзыв</h2>
-          <p class="info__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <section class="info">
+          <h1 class="info__caption">Оставьте свой отзыв</h2>
+          <p class="info__text">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях</p>
         </section>
 
-        <section class="feedback">
+        <section class="form">
           <h2 class="visually-hidden">Форма отзыва</h2>
-          <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
 
-            <fieldset class="feedback__fieldset">
-              <p class="feedback__caption">Представьтесь:</p>
-              <p class="feedback__field-wrapper">
-                <label for="first-name">ИМЯ*:</label>
+            <fieldset class="form__fieldset">
+              <p class="form__caption">Представьтесь:</p>
+              <p class="form__field-wrapper">
+                <label for="first-name">Имя*:</label>
                 <input class="input-text" id="first-name" name="first-name" type="text" placeholder="Петр" required>
               </p>
-              <p class="feedback__field-wrapper">
-                <label for="family-name">ФАМИЛИЯ*:</label>
+              <p class="form__field-wrapper">
+                <label for="family-name">Фамилия*:</label>
                 <input class="input-text" id="family-name" name="family-name" type="text" placeholder="Иванов" required>
               </p>
-              <p class="feedback__field-wrapper">
+              <p class="form__field-wrapper">
                 <label for="patronymic">Отчество:</label>
                 <input class="input-text" id="patronymic" name="patronymic" type="text" placeholder="Александрович">
               </p>
             </fieldset>
 
-            <fieldset class="feedback__fieldset">
-              <p class="feedback__caption">Контактная информация:</p>
-              <p class="feedback__field-wrapper">
+            <fieldset class="form__fieldset">
+              <p class="form__caption">Контактная информация:</p>
+              <p class="form__field-wrapper">
                 <label for="telephone">Контактный телефон*:</label>
                 <input class="input-text input-text--telephone" id="telephone" name="telephone" type="text" placeholder="Введите телефон" required>
               </p>
-              <p class="feedback__field-wrapper">
+              <p class="form__field-wrapper">
                 <label for="email">Электронная почта*:</label>
                 <input class="input-text input-text--email" id="email" name="email" type="text" placeholder="Введите e-mail" required>
               </p>
             </fieldset>
 
-            <fieldset class="feedback__fieldset">
-              <p class="feedback__caption">Ваше общее впечатление:</p>
+            <fieldset class="form__fieldset">
+              <p class="form__caption">Ваше общее впечатление:</p>
               <ul class="input-list">
                 <li class="input-list__item">
                   <label for="postitive">
@@ -93,41 +91,42 @@
               </ul>
             </fieldset>
 
-            <fieldset class="feedback__fieldset">
+            <fieldset class="form__fieldset">
               <p class="fieldset__caption">Посещенные достопримечательности:</p>
               <ul class="input-list">
                 <li class="input-list__item">
                   <label for="devils-bridge">
-                    <input class="checkbox" id="devils-bridge" name="devils-bridge" type="checkbox">
+                    <input class="checkbox" id="devils-bridge" name="places[]" value="devils-bridge" type="checkbox">
                     <span class="checkbox-label">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="input-list__item">
                   <label for="slide-park">
-                    <input class="checkbox" id="slide-park" name="slide-park" type="checkbox">
+                    <input class="checkbox" id="slide-park" name="places[]" value="slide-park" type="checkbox">
                     <span class="checkbox-label">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="input-list__item">
                   <label for="bell-mount">
-                    <input class="checkbox" id="bell-mount" name="bell-mount" type="checkbox">
+                    <input class="checkbox" id="bell-mount" name="places[]" value="bell-mount" type="checkbox">
                     <span class="checkbox-label">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="input-list__item">
                   <label for="red-rocks">
-                    <input class="checkbox" id="red-rocks" name="red-rocks" type="checkbox">
+                    <input class="checkbox" id="red-rocks" name="places[]" value="red-rocks" type="checkbox">
                     <span class="checkbox-label">Красные скалы</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="feedback__fieldset">
-              <p class="fielset__caption">Опишите свои эмоции:</p>
-              <textarea class="feedback-text" id="feedback-text" name="feedback-text" rows="5" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
-              <button class="btn btn--blue" type="submit" id="feedback-submit">Отправить отзыв</button>
+            <fieldset class="form__fieldset">
+              <p class="fieldset__caption">Опишите свои эмоции:</p>
+              <textarea class="form-text" id="form-text" name="form-text" rows="5" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
+
+            <button class="btn" type="submit">Отправить отзыв</button>
 
           </form>
         </section>
@@ -135,18 +134,16 @@
       </main>
 
       <footer class="page-footer">
-        <div class="hashtag">
-          <a class="hashtag__link" href="https://twitter.com/search?q=%23visitsedona&src=typd&lang=en">
-            #VISITSEDONA
-          </a>
-        </div>
+
+        <a class="hashtag" href="https://twitter.com/search?q=%23visitsedona&src=typd&lang=en">
+            #VISITSEDONA</a>
 
         <section class="social">
-          <h2 class="visually-hidden">Седона в социальных сетях</h2>
+          <h2 class="visually-hidden">Седона в&nbsp;социальных сетях</h2>
           <ul class="social__list">
-            <li class="social__item"><a href="#" class="social__link">twitter</a></li>
-            <li class="social__item"><a href="#" class="social__link">facebook</a></li>
-            <li class="social__item"><a href="#" class="social__link">youtube</a></li>
+            <li class="social__item"><a class="social__link" href="#"  aria-label="twitter">twitter</a></li>
+            <li class="social__item"><a class="social__link" href="#" aria-label="facebook">facebook</a></li>
+            <li class="social__item"><a class="social__link" href="#"  aria-label="youtube">youtube</a></li>
           </ul>
         </section>
 

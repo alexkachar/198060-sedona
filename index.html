@@ -2,17 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона / Главная</title>
   </head>
   <body>
     <div class="page-wrapper">
       <header class="page-header">
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button" aria-label="открыть">Открыть меню</button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="photo.html" >Фото и видео</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html" >Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="photo.html" >Фото и&nbsp;видео</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="form.html" >Форма отзыва</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" >HTML Academy</a></li>
             </ul>
@@ -25,25 +25,22 @@
 
       <main class="page-main">
 
-        <section class="intro">
-          <h1 class="visually-hidden">Welcome to the gorgeus Sedona!</h1>
-          <figure class="into__text">
-            <img class="intro__text-img" src="http://placehold.it/150x100" alt="Because the Grand Canyon Sucks!">
-          </figure>
+        <section class="intro intro--index">
+          <h1 class="visually-hidden">Welcome to&nbsp;the gorgeus Sedona!</h1>
+          <svg class="intro__svg" src="http://placehold.it/150x100" aria-labelledby="Because the Grand Canyon Sucks!">
         </section>
 
-        <section class="info">
+        <section class="info info--index">
           <h2 class="visually-hidden">Почему Седона?</h2>
-          <p class="info__caption">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="info__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+          <p class="info__caption">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</p>
+          <p class="info__text">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче чем гранд каньон!</p>
         </section>
 
         <section class="advantage">
-          <h2 class="visually-hidden">Седона - настоящий американский городок!</h2>
+          <h2 class="visually-hidden">Седона&nbsp;&mdash; настоящий американский городок!</h2>
           <article class="advantage__article">
             <h3 class="advantage__caption">Настоящий городок</h3>
-            <p class="advantage-number">&ndash; №1 &ndash;</p>
-            <p class="advantage__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <p class="advantage__text">Седона не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
           </article>
 
           <figure class="advantage__figure">
@@ -57,25 +54,16 @@
 
           <ul class="features__list">
             <li>
-              <figure class="figure">
-                <img class="features__figure" src="http://placehold.it/150x100" alt="Жилье">
-              </figure>
               <h3 class="features__caption">Жилье</h3>
-              <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <p class="features__text">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
             </li>
             <li>
-              <figure class="figure">
-                <img class="features__figure" src="http://placehold.it/150x100" alt="Сувениры">
-              </figure>
               <h3 class="features__caption">Сувениры</h3>
-              <p class="features__text">Не только китайского, но и местного производства!</p>
+              <p class="features__text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
             </li>
             <li>
-            <figure class="figure">
-              <img class="features__figure" src="http://placehold.it/150x100" alt="Еда">
-            </figure>
-            <h3 class="features__caption">Еда</h3>
-            <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <h3 class="features__caption">Еда</h3>
+              <p class="features__text">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
             </li>
           </ul>
 
@@ -86,8 +74,7 @@
 
           <article class="advantage__article">
             <h3 class="advantage__caption">Там есть мост дьявола</h3>
-            <p class="advantage-number">&ndash; №2 &ndash;</p>
-            <p class="advantage__taxt">Да, по нему можно пройти! если вы осмелитесь, конечно</p>
+            <p class="advantage__text">Да, по&nbsp;нему можно пройти! если вы&nbsp;осмелитесь, конечно</p>
           </article>
 
           <figure class="advantage__figure">
@@ -101,18 +88,15 @@
           <ul class="features__list">
             <li class="features__item">
               <h3 class="features__caption">Небольшая площадь</h3>
-              <p class="advantage-number advantage-number--black">&ndash; №3 &ndash;</p>
               <p class="features__text">Все интересные места находятся очень близко</p>
             </li>
             <li class="features__item">
               <h3 class="features__caption">Красивая дорога</h3>
-              <p class="advantage-number advantage-number--black">&ndash; №4 &ndash;</p>
-              <p class="features__text">Ехать в Cедону из Лас-Вегаса совсем не скучно!</p>
+              <p class="features__text">Ехать в&nbsp;Cедону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
             </li>
             <li class="features__item">
               <h3 class="features__caption">Мало туристов</h3>
-              <p class="advantage-number advantage-number--black">&ndash; №5 &ndash;</p>
-              <p class="features__text">Большинство едет в Гранд Каньон и толпится там</p>
+              <p class="features__text">Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
             </li>
           </ul>
         </section>
@@ -120,12 +104,12 @@
         <section class="order">
           <h2 class="visually-hidden">Забронировать Гостиницу</h2>
           <p class="order__caption">Заинтересовались?</p>
-          <p class="order__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="btn btn--blue order__btn" href="hotels.html">Найти гостиницу</a>
+          <p class="order__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
+          <a class="btn order__btn" href="hotels.html">Найти гостиницу</a>
         </section>
 
         <section class="map">
-          <h2 class="visually-hidden">Карта регтона</h2>
+          <h2 class="visually-hidden">Карта региона</h2>
           <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676325.7761913096!2d-112.91574454519595!3d34.85437338102924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2sil!4v1506159547840" width="320" height="350" frameborder="0" style="border:0" allowfullscreen></iframe> -->
           <!-- временно скрыто для удобства редактирования -->
         </section>
@@ -133,18 +117,16 @@
       </main>
 
       <footer class="page-footer">
-        <div class="hashtag">
-          <a class="hashtag__link" href="https://twitter.com/search?q=%23visitsedona&src=typd&lang=en">
-            #VISITSEDONA
-          </a>
-        </div>
+
+        <a class="hashtag" href="https://twitter.com/search?q=%23visitsedona&src=typd&lang=en">
+            #VISITSEDONA</a>
 
         <section class="social">
-          <h2 class="visually-hidden">Седона в социальных сетях</h2>
+          <h2 class="visually-hidden">Седона в&nbsp;социальных сетях</h2>
           <ul class="social__list">
-            <li class="social__item"><a href="#" class="social__link">twitter</a></li>
-            <li class="social__item"><a href="#" class="social__link">facebook</a></li>
-            <li class="social__item"><a href="#" class="social__link">youtube</a></li>
+            <li class="social__item"><a class="social__link" href="#"  aria-label="twitter">twitter</a></li>
+            <li class="social__item"><a class="social__link" href="#" aria-label="facebook">facebook</a></li>
+            <li class="social__item"><a class="social__link" href="#"  aria-label="youtube">youtube</a></li>
           </ul>
         </section>
 
@@ -152,7 +134,7 @@
           <h2 class="visually-hidden">Студия-разработчик сайта:</h2>
             <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
               Pазработано
-              <img class="copyright__svg" src="http://placehold.it/150x100" alt="HTML Academy">
+              <svg class="copyright__svg"></svg>
             </a>
           </section>
 
