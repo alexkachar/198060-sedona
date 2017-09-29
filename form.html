@@ -9,14 +9,14 @@
       <header class="page-header">
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button" aria-label="открыть">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link" href="index.html" >Главная</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="photo.html" >Фото и&nbsp;видео</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="form.html" >Форма отзыва</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" >HTML Academy</a></li>
-            </ul>
-          </div>
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html" >Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html" >Фото и&nbsp;видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html" >Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" >HTML Academy</a></li>
+          </ul>
+
         </nav>
         <a class="page-header__logo"  href="index.html">
           <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Sedona logo">
@@ -25,14 +25,16 @@
 
       <main class="page-main">
 
-        <section class="intro">
-          <h2 class="visually-hidden">Welcome to&nbsp;the gorgeus Sedona!</h2>
-          <svg class="intro__svg" src="http://placehold.it/150x100" aria-labelledby="Because the Grand Canyon Sucks!">
-        </section>
-
         <section class="info">
-          <h1 class="info__caption">Оставьте свой отзыв</h2>
-          <p class="info__text">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях</p>
+          <article class="info__picture">
+            <h2 class="visually-hidden">Sedona</h2>
+            <svg class="intro__svg" src="http://placehold.it/150x100" aria-labelledby="Because the Grand Canyon Sucks!">
+          </article>
+
+          <article class="info__article">
+            <h1 class="info__caption">Оставьте свой отзыв</h1>
+            <p class="info__text">Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных Вами достопримечательностях</p>
+          </article>
         </section>
 
         <section class="form">
@@ -40,7 +42,7 @@
           <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
 
             <fieldset class="form__fieldset">
-              <p class="form__caption">Представьтесь:</p>
+              <p class="form__fieldset-caption">Представьтесь:</p>
               <p class="form__field-wrapper">
                 <label for="first-name">Имя*:</label>
                 <input class="input-text" id="first-name" name="first-name" type="text" placeholder="Петр" required>
@@ -56,10 +58,10 @@
             </fieldset>
 
             <fieldset class="form__fieldset">
-              <p class="form__caption">Контактная информация:</p>
+              <p class="form__fieldset-caption">Контактная информация:</p>
               <p class="form__field-wrapper">
                 <label for="telephone">Контактный телефон*:</label>
-                <input class="input-text input-text--telephone" id="telephone" name="telephone" type="text" placeholder="Введите телефон" required>
+                <input class="input-text input-text--telephone" id="telephone" name="telephone" type="tel" placeholder="Введите телефон" required>
               </p>
               <p class="form__field-wrapper">
                 <label for="email">Электронная почта*:</label>
@@ -68,62 +70,62 @@
             </fieldset>
 
             <fieldset class="form__fieldset">
-              <p class="form__caption">Ваше общее впечатление:</p>
-              <ul class="input-list">
-                <li class="input-list__item">
+              <p class="form__fieldset-caption">Ваше общее впечатление:</p>
+              <ul class="form__input-list">
+                <li class="form__input-item">
                   <label for="postitive">
-                    <input class="radio" id="postitive" name="impression" value="positive" type="radio">
-                    <span class="radio-label">Скорее положительное</span>
+                    <input class="form__radio" id="postitive" name="impression" value="positive" type="radio">
+                    <span class="input-list__radio-label">Скорее положительное</span>
                   </label>
                 </li>
-                <li class="input-list__item">
+                <li class="form__input-item">
                   <label for="negative">
-                    <input class="radio" id="negative" name="impression" value="negative" type="radio">
-                    <span class="radio-label">Скорее отрицательное</span>
+                    <input class="form__radio" id="negative" name="impression" value="negative" type="radio">
+                    <span class="input-list__radio-label">Скорее отрицательное</span>
                   </label>
                 </li>
-                <li class="input-list__item">
+                <li class="form__input-item">
                   <label for="difficult">
-                    <input class="radio" id="difficult" name="impression" value="difficult" type="radio">
-                    <span class="radio-label">Затрудняюсь ответить</span>
+                    <input class="form__radio" id="difficult" name="impression" value="difficult" type="radio">
+                    <span class="input-list__radio-label">Затрудняюсь ответить</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="form__fieldset">
-              <p class="fieldset__caption">Посещенные достопримечательности:</p>
-              <ul class="input-list">
-                <li class="input-list__item">
+              <p class="form__fieldset-caption">Посещенные достопримечательности:</p>
+              <ul class="form__input-list">
+                <li class="form__input-item">
                   <label for="devils-bridge">
-                    <input class="checkbox" id="devils-bridge" name="places[]" value="devils-bridge" type="checkbox">
-                    <span class="checkbox-label">Мост Дьявола</span>
+                    <input class="form__checkbox" id="devils-bridge" name="places[]" value="devils-bridge" type="checkbox">
+                    <span class="form__checkbox-label">Мост Дьявола</span>
                   </label>
                 </li>
-                <li class="input-list__item">
+                <li class="form__input-item">
                   <label for="slide-park">
-                    <input class="checkbox" id="slide-park" name="places[]" value="slide-park" type="checkbox">
-                    <span class="checkbox-label">Слайд-парк</span>
+                    <input class="form__checkbox" id="slide-park" name="places[]" value="slide-park" type="checkbox">
+                    <span class="form__checkbox-label">Слайд-парк</span>
                   </label>
                 </li>
-                <li class="input-list__item">
+                <li class="form__input-item">
                   <label for="bell-mount">
-                    <input class="checkbox" id="bell-mount" name="places[]" value="bell-mount" type="checkbox">
-                    <span class="checkbox-label">Гора-Колокол</span>
+                    <input class="form__checkbox" id="bell-mount" name="places[]" value="bell-mount" type="checkbox">
+                    <span class="form__checkbox-label">Гора-Колокол</span>
                   </label>
                 </li>
-                <li class="input-list__item">
+                <li class="form__input-item">
                   <label for="red-rocks">
-                    <input class="checkbox" id="red-rocks" name="places[]" value="red-rocks" type="checkbox">
-                    <span class="checkbox-label">Красные скалы</span>
+                    <input class="form__checkbox" id="red-rocks" name="places[]" value="red-rocks" type="checkbox">
+                    <span class="form__checkbox-label">Красные скалы</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="form__fieldset">
-              <p class="fieldset__caption">Опишите свои эмоции:</p>
-              <textarea class="form-text" id="form-text" name="form-text" rows="5" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
+              <label class="form__textarea-label" for="form__fieldset">Опишите свои эмоции:</label>
+              <textarea class="form__textarea" id="form-textarea" name="form-text" rows="5" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
 
             <button class="btn" type="submit">Отправить отзыв</button>
