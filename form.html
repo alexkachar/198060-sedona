@@ -26,13 +26,14 @@
       <main class="page-main">
 
         <section class="info">
+          <h1 class="visually-hidden">Оставьте свой отзыв</h1>
           <article class="info__picture">
             <h2 class="visually-hidden">Sedona</h2>
-            <svg class="intro__svg" src="http://placehold.it/150x100" aria-labelledby="Because the Grand Canyon Sucks!">
+            <svg class="intro__svg"></svg>
           </article>
 
           <article class="info__article">
-            <h1 class="info__caption">Оставьте свой отзыв</h1>
+            <h2 class="info__caption">Оставьте свой отзыв</h2>
             <p class="info__text">Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных Вами достопримечательностях</p>
           </article>
         </section>
@@ -52,8 +53,8 @@
                 <input class="input-text" id="family-name" name="family-name" type="text" placeholder="Иванов" required>
               </p>
               <p class="form__field-wrapper">
-                <label for="patronymic">Отчество:</label>
-                <input class="input-text" id="patronymic" name="patronymic" type="text" placeholder="Александрович">
+                <label for="patronym">Отчество:</label>
+                <input class="input-text" id="patronym" name="patronym" type="text" placeholder="Александрович">
               </p>
             </fieldset>
 
@@ -65,7 +66,7 @@
               </p>
               <p class="form__field-wrapper">
                 <label for="email">Электронная почта*:</label>
-                <input class="input-text input-text--email" id="email" name="email" type="text" placeholder="Введите e-mail" required>
+                <input class="input-text input-text--email" id="email" name="email" type="email" placeholder="Введите e-mail" required>
               </p>
             </fieldset>
 
@@ -124,7 +125,7 @@
             </fieldset>
 
             <fieldset class="form__fieldset">
-              <label class="form__textarea-label" for="form__fieldset">Опишите свои эмоции:</label>
+              <label class="form__textarea-label" for="form-textarea">Опишите свои эмоции:</label>
               <textarea class="form__textarea" id="form-textarea" name="form-text" rows="5" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
 
