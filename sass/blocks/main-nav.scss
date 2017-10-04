@@ -1,5 +1,5 @@
 .main-nav {
-  background-color: $light-blue;
+  background-color: $color-blue-light;
 }
 
 // .main-nav__toggle {
@@ -14,8 +14,8 @@
 
 .main-nav__link {
   font-size: 18px;
-  line-height: 40px;
+  line-height: 2.25;
   font-weight: 700;
-  color: $white;
+  color: $color-white;
   text-decoration: none;
 }

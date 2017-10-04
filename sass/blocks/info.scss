@@ -1,25 +1,29 @@
 .info {
-  background-color: $white;
+  background-color: $color-white;
   &--single {
-    background-color: $light-blue;
+    background-color: $color-blue-light;
   }
   &--gray {
-    background-color: $light-gray;
+    background-color: $color-gray-light;
   }
 }
 
 .info__caption {
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 700;
+  color: $color-black;
   &--dark-brown {
-    color: $dark-brown;
+    color: $color-brown-dark;
   }
   &--white {
-    color: $white;
+    color: $color-white;
   }
 }
 
 .info__text {
-  color: $dark-brown;
+  color: $color-brown-dark;
   &--white {
-    color: $white;
+    color: $color-white;
   }
 }

@@ -2,7 +2,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  color: $black;
+  color: $color-black;
 }
 
 .form__input-text-label {
@@ -10,7 +10,7 @@
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  color: $dark-brown;
+  color: $color-brown-dark;
   text-transform: uppercase;
 }
 
@@ -18,17 +18,17 @@
 .form__input-checkbox-label{
   font-family: $font;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 1.45;
   font-weight: 700;
-  color: $black;
+  color: $color-black;
   text-transform: uppercase;
 }
 
 .form__fieldset {
   font-family: $font;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 1.45;
   font-weight: 700;
-  color: $black;
+  color: $color-black;
   text-transform: uppercase;
 }
