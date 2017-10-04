@@ -1,0 +1,25 @@
+.info {
+  background-color: $white;
+  &--single {
+    background-color: $light-blue;
+  }
+  &--gray {
+    background-color: $light-gray;
+  }
+}
+
+.info__caption {
+  &--dark-brown {
+    color: $dark-brown;
+  }
+  &--white {
+    color: $white;
+  }
+}
+
+.info__text {
+  color: $dark-brown;
+  &--white {
+    color: $white;
+  }
+}

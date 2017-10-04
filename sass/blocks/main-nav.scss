@@ -1,0 +1,21 @@
+.main-nav {
+  background-color: $light-blue;
+}
+
+// .main-nav__toggle {
+//   font-size: 0;
+// }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
+}
