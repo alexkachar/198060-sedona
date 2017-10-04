@@ -9,31 +9,25 @@
       <header class="page-header">
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button" aria-label="открыть">Открыть меню</button>
-
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html" >Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="photo.html" >Фото и&nbsp;видео</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html" >Форма отзыва</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" >HTML Academy</a></li>
           </ul>
-
         </nav>
         <a class="page-header__logo"  href="index.html">
           <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Sedona logo">
         </a>
       </header>
-
       <main class="page-main">
-
-        <section class="main-heading">
-          <h1 class="info__caption">Оставьте свой отзыв</h1>
-          <p class="info__text">Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных Вами достопримечательностях</p>
-        </section>
-
+        <div class="main-heading">
+          <h1 class="main-heading__caption">Оставьте свой отзыв</h1>
+          <p class="main-heading__text">Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных Вами достопримечательностях</p>
+        </div>
         <section class="form">
           <h2 class="visually-hidden">Форма отзыва</h2>
           <form class="form__self" action="https://echo.htmlacademy.ru" method="post">
-
             <fieldset class="form__fieldset">
               <p class="form__fieldset-caption">Представьтесь:</p>
               <p class="form__field-wrapper">
@@ -49,7 +43,6 @@
                 <input class="form__input-text" id="patronym" name="patronym" type="text" placeholder="Александрович">
               </p>
             </fieldset>
-
             <fieldset class="form__fieldset">
               <p class="form__fieldset-caption">Контактная информация:</p>
               <p class="form__field-wrapper">
@@ -61,7 +54,6 @@
                 <input class="form__input-text form__input-text--email" id="email" name="email" type="email" placeholder="Введите e-mail" required>
               </p>
             </fieldset>
-
             <fieldset class="form__fieldset">
               <p class="form__fieldset-caption">Ваше общее впечатление:</p>
               <ul class="form__input-list">
@@ -85,7 +77,6 @@
                 </li>
               </ul>
             </fieldset>
-
             <fieldset class="form__fieldset">
               <p class="form__fieldset-caption">Посещенные достопримечательности:</p>
               <ul class="form__input-list">
@@ -115,25 +106,18 @@
                 </li>
               </ul>
             </fieldset>
-
             <fieldset class="form__fieldset">
               <label class="form__fieldset-caption" for="form-textarea">Опишите свои эмоции:</label>
               <textarea class="form__textarea" id="form-textarea" name="form-text" rows="5" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
-
             <button class="btn" type="submit">Отправить отзыв</button>
-
           </form>
         </section>
-
       </main>
-
       <footer class="page-footer">
-
         <a class="hashtag" href="https://twitter.com/search?q=%23visitsedona&src=typd&lang=en">
           #VISITSEDONA
         </a>
-
         <section class="social">
           <h2 class="visually-hidden">Седона в&nbsp;социальных сетях</h2>
           <ul class="social__list">
@@ -142,7 +126,6 @@
             <li class="social__item"><a class="social__link" href="#"  aria-label="youtube">youtube</a></li>
           </ul>
         </section>
-
         <section class="copyright">
           <h2 class="visually-hidden">Студия-разработчик сайта:</h2>
             <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
@@ -151,22 +134,18 @@
               <svg class="copyright__svg"></svg>
             </a>
           </section>
-
       </footer>
-
       <section class="modal modal--failure modal--hidden">
         <h2 class="modal__caption">Что-то пошло не&nbsp;так!</h2>
         <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить</p>
         <button class="btn" type="button">Ок</button>
       </section>
-
       <section class="modal modal--success modal--hidden">
         <h2 class="modal__caption">Ваш отзыв отправлен!</h2>
         <p class="modal__text">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам.
 В&nbsp;ближайшее время мы&nbsp;опубликуем его на&nbsp;сайте.</p>
         <button class="btn" type="button">Закрыть окно</button>
       </section>
-
     </div>
   </body>
 </html>
