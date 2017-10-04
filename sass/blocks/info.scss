@@ -1,0 +1,29 @@
+.info {
+  background-color: $color-white;
+  &--single {
+    background-color: $color-blue-light;
+  }
+  &--gray {
+    background-color: $color-gray-light;
+  }
+}
+
+.info__caption {
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 700;
+  color: $color-black;
+  &--dark-brown {
+    color: $color-brown-dark;
+  }
+  &--white {
+    color: $color-white;
+  }
+}
+
+.info__text {
+  color: $color-brown-dark;
+  &--white {
+    color: $color-white;
+  }
+}
