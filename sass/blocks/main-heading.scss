@@ -1,5 +1,13 @@
 .main-heading {
+  min-height: 614px;
+  padding-top: 340px;
   background-color: $color-white;
+}
+
+@media (min-width:756px) {
+  .main-heading {
+    padding-top: 520px;
+  }
 }
 
 .main-heading__caption {

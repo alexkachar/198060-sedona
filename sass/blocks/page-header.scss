@@ -1,11 +1,27 @@
 .page-header {
   position: relative;
+  min-height: 279px;
+  background-color: $color-white;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    min-height: 56px;
+  }
 }
 
 .page-header__logo {
   position: absolute;
-  left: calc(50% -56px);
-  z-index: 10;
-  width: 102px;
+  top: 223px;
+  left: calc(50% - 51px);
+  font-size: 0;
   height: 83px;
+  width: 102px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .page-header__logo {
+    top: 0;
+  }
 }
