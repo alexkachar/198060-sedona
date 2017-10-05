@@ -1,8 +1,25 @@
-body {
+:root {
   font-family: $font;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   color: $color-brown-dark;
   text-transform: uppercase;
+}
+
+//обводки
+
+.backlight-yellow {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+
+.backlight-red {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+.backlight-green {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
 }
