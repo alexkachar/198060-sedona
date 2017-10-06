@@ -12,20 +12,19 @@
 
 @media (min-width: $width-tablet) {
   .posts__item {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 50%;
+    width: 378px;
   }
   .posts__item--wide {
-    flex-grow: 2;
-    flex-basis: 100%;
+    width: 756px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .posts__item {
-    flex-grow: 1;
-    flex-basis: 33.3%;
+    width: 400px;
+  }
+  .posts__item--wide {
+    width: 1200px;
   }
 }
 
