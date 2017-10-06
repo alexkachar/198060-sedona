@@ -1,5 +1,38 @@
-.post {
+.posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   background-color: $color-white;
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .posts__item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50%;
+  }
+  .posts__item--wide {
+    flex-grow: 2;
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .posts__item {
+    flex-grow: 1;
+    flex-basis: 33.3%;
+  }
+}
+
+.posts__figure {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .posts__caption {
