@@ -1,11 +1,16 @@
 .main-heading {
-  min-height: 614px;
-  padding-top: 340px;
+  min-height: 628px;
+  padding-top: 390px;
   background-color: $color-white;
+  background-image: url('../img/bg-back-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  text-align: center;
 }
 
 @media (min-width:756px) {
   .main-heading {
+    min-height: 724px;
     padding-top: 520px;
   }
 }

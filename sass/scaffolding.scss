@@ -5,6 +5,31 @@
   font-weight: 400;
   color: $color-brown-dark;
   text-transform: uppercase;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 //обводки
@@ -22,4 +47,9 @@
 .backlight-green {
   background: rgba(0, 128, 0, 0.2);
   box-shadow: 0 0 0 3px green;
+}
+
+.backlight-blue {
+  background: rgba(42, 0, 225, 0.2);
+  box-shadow: 0 0 0 3px blue;
 }
