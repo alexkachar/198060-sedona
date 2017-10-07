@@ -1,8 +1,83 @@
+.form__self {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+  }
+}
+
+.form__fieldset-cover {
+  @media (min-width: $width-tablet) {
+    justify-content: space-between;
+    flex-basis: 324px;
+    flex-grow: 1;
+  }
+  @media (min-width: $width-desktop) {
+    flex-basis: 480px;
+  }
+}
+
+.form__fieldset-cover--3 {
+  @media (min-width: $width-tablet) {
+    order: -1;
+  }
+}
+
+.form__fieldset-cover--4,
+.form__fieldset-cover--2 {
+  @media (min-width: $width-tablet) {
+    flex-basis: 648px;
+  }
+}
+
+.form__fieldset {
+  font-family: $font;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 700;
+  color: $color-black;
+  text-transform: uppercase;
+  border: 0;
+  border-bottom: 1px solid $color-gray-light;
+  @media (min-width: $width-tablet) {
+    border-bottom: 0;
+  }
+}
+
 .form__fieldset-caption {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   color: $color-black;
+  text-align: center;
+}
+
+.form__textarea-label {
+  display: block;
+}
+
+.form__textarea {
+  width: 280px;
+  height: 160px;
+  background-color: $color-gray-light;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: $color-black;
+  resize: none;
+  &::placeholder {
+    color: $color-black;
+  }
+  @media (min-width: $width-tablet) {
+    width: 648px;
+    margin-left: 60px;
+  }
+  @media (min-width: $width-desktop) {
+    width: 960px;
+    margin-left: 120px;
+  }
 }
 
 .form__input-text-label {
@@ -24,11 +99,73 @@
   text-transform: uppercase;
 }
 
-.form__fieldset {
-  font-family: $font;
-  font-size: 18px;
-  line-height: 1.45;
-  font-weight: 700;
-  color: $color-black;
-  text-transform: uppercase;
+.form__input-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__input-list--checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.form__input-item--checkboxes {
+  @media (min-width: $width-tablet) {
+    flex-basis: 50%;
+  }
+  @media (min-width: $width-desktop) {
+    flex-basis: 25%;
+  }
+}
+
+.form__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  @media (min-width: $width-desktop) {
+    flex-direction: row;
+  }
+}
+
+.form__field-wrapper--contacts {
+  @media (min-width: $width-desktop) {
+    flex-basis: 50%;
+  }
+}
+
+.form__btn {
+  width: 280px;
+  @media (min-width: $width-tablet) {
+    width: 324px;
+    margin-left: 60px;
+  }
+  @media (min-width: $width-desktop) {
+    width: 480px;
+    margin-left: 120px;
+  }
+}
+
+.form__textarea-label {
+  position: relative;
+  @media (min-width: $width-tablet) {
+    &::after {
+      content: "* — обязательные поля";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.85;
+      font-family: $font;
+      position: absolute;
+      top: 210px;
+      right: 60px;
+    }
+  }
+  @media (min-width: $width-desktop) {
+    right: 100px;
+  }
 }

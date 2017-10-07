@@ -1,0 +1,29 @@
+.modal {
+  width: 320px;
+  min-height: 278px;
+  background-color: $color-white;
+  text-align: center;
+  padding-top: 48px;
+  // padding-left: 30px;
+  // padding-right: 30px;
+}
+
+.modal--failure {
+  @media (min-width: $width-tablet) {
+    width: 400px;
+    height: 347px;
+  }
+}
+
+.modal--success {
+  @media (min-width: $width-tablet) {
+    width: 648px;
+    height: 348px;
+  }
+}
+
+.modal__btn--cover {
+  height: 100px;
+  width: 100%;
+  background-color: $color-gray-light;
+}
