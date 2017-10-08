@@ -5,3 +5,12 @@
   font-weight: 700;
   text-decoration: none;
 }
+
+.hashtag:hover,
+.hashtag:focus {
+  color: $color-blue-light;
+}
+
+.hashtag:active {
+  color: rgba(0, 0, 0, 0.3);
+}
