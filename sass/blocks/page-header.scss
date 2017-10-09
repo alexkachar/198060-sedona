@@ -2,10 +2,7 @@
   position: relative;
   min-height: 279px;
   background-color: $color-white;
-}
-
-@media (min-width: 768px) {
-  .page-header {
+  @media (min-width: $width-tablet) {
     min-height: 56px;
   }
 }
@@ -18,10 +15,7 @@
   height: 83px;
   width: 102px;
   cursor: pointer;
-}
-
-@media (min-width: $width-tablet) {
-  .page-header__logo {
+  @media (min-width: $width-tablet) {
     top: 0;
   }
 }

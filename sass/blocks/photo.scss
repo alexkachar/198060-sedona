@@ -10,22 +10,18 @@
   }
 }
 
-@media (min-width: $width-tablet) {
-  .photo__item {
+.photo__item {
+  @media (min-width: $width-tablet) {
     width: 378px;
   }
-  .photo__item--wide {
-    width: 756px;
-  }
-}
-
-@media (min-width: $width-desktop) {
-  .photo__item {
+  @media (min-width: $width-desktop) {
     width: 400px;
   }
-  .photo__item--wide {
-    width: 1200px;
-  }
+
+}
+
+.photo__item--wide {
+  width: 100%;
 }
 
 .photo__figure {

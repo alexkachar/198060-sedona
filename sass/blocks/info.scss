@@ -48,6 +48,15 @@
   }
 }
 
+.info__article {
+  @media (min-width: $width-tablet) {
+    width: 256px;
+  }
+  @media (min-width: $width-desktop) {
+    width: 400px;
+  }
+}
+
 .info__article--single {
   min-height: 191px;
 }
@@ -63,11 +72,24 @@
   }
 }
 
+.info__figure {
+  height: 256px;
+  margin: 0;
+  padding: 0;
+  @media (min-width: $width-tablet) {
+    width: 512px;
+  }
+  @media (min-width: $width-desktop) {
+    width: 800px;
+  }
+}
+
 .info__caption--numbered {
   position: relative;
   margin-bottom: 55px;
+  counter-increment: article-numbered;
   &::after {
-    content: "— №1 —";
+    content: "— № " counter(article-numbered) " —";
     left: calc(50% - 45px);
     bottom: -35px;
     font-family: $font;
@@ -79,43 +101,4 @@
     height: 20px;
     z-index: 1;
   }
-}
-
-.info__caption--numbered {
-  &-2::after {
-    content: "— №2 —";
-  }
-  &-3::after {
-    content: "— №3 —";
-  }
-  &-4::after {
-    content: "— №4 —";
-  }
-  &-5::after {
-    content: "— №5 —";
-  }
-}
-
-@media (min-width: $width-tablet) {
-  .info__article {
-    width: 256px;
-  }
-  .info__figure {
-  width: 512px;
-  }
-}
-
-@media (min-width: $width-desktop) {
-  .info__article {
-    width: 400px;
-  }
-  .info__figure {
-  width: 800px;
-  }
-}
-
-.info__figure {
-  height: 256px; //есть вопрос по поведению fugure
-  margin: 0;
-  padding: 0;
 }

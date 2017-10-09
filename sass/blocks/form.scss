@@ -19,14 +19,13 @@
   }
 }
 
-.form__fieldset-cover--3 {
+.form__fieldset-cover--order {
   @media (min-width: $width-tablet) {
     order: -1;
   }
 }
 
-.form__fieldset-cover--4,
-.form__fieldset-cover--2 {
+.form__fieldset-cover--wide {
   @media (min-width: $width-tablet) {
     flex-basis: 648px;
   }
