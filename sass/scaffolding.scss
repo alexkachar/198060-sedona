@@ -34,22 +34,27 @@ img {
 
 //обводки
 
-.backlight-yellow {
+main, article {
   background: rgba(234, 255, 45, 0.2);
   box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
-.backlight-red {
+header, fieldset {
   background: rgba(255, 45, 82, 0.2);
   box-shadow: 0 0 0 3px rgb(255, 45, 82);
 }
 
-.backlight-green {
+div, a {
+  background: rgba(255, 174, 0, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 174, 0);
+}
+
+footer, li {
   background: rgba(0, 128, 0, 0.2);
   box-shadow: 0 0 0 3px green;
 }
 
-.backlight-blue {
+section, ul, p {
   background: rgba(42, 0, 225, 0.2);
   box-shadow: 0 0 0 3px blue;
 }
