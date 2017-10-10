@@ -1,0 +1,123 @@
+.player {
+  position: relative;
+}
+
+.player__video {
+  width: 320px;
+  @media (min-width: $width-tablet) {
+    width: 648px;
+  }
+  @media (min-width: $width-desktop) {
+    width: 800px;
+  }
+}
+
+.player__controls {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  left: 20px;
+  bottom: -70px;
+  width: 280px;
+  height: 111px;
+  @media (min-width: $width-tablet) {
+    width: 648px;
+    bottom: 0;
+    left: 60px;
+    height: 92px;
+  }
+  @media (min-width: $width-desktop) {
+    width: 800px;
+    left: 200px;
+  }
+}
+
+.player__timeline {
+  align-self: flex-start;
+  position: relative;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+  @media (min-width: $width-tablet) {
+    height: 92px;
+    align-self: auto;
+  }
+}
+
+.player__scroll-bar {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  width: 235px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  @media (min-width: $width-tablet) {
+    width: 389px;
+    left: 93px;
+    top: 45px;
+  }
+  @media (min-width: $width-desktop) {
+    width: 541px;
+    left: 93px;
+    top: 45px;
+  }
+}
+
+.player__scroller {
+  position: absolute;
+  top: 17px;
+  left: 80px;
+  width: 9px;
+  height: 9px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  @media (min-width: $width-tablet) {
+    top: 45px;
+    left: 93px;
+  }
+  @media (min-width: $width-tablet) {
+    top: 42px;
+    left: 206px;
+  }
+}
+
+.player__btn {
+  align-self: flex-end;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  @media (min-width: $width-tablet) {
+    align-self: auto;
+    margin-bottom: 0;
+  }
+}
+
+.player__btn--replay {
+  width: 16px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+.player__btn--subtitles {
+  margin-left: auto;
+  margin-right: 31px;
+}
+
+.player__btn--full-screen {
+  margin-right: 23px;
+}
+
+.player__btn path,
+.player__btn polygon {
+  fill: #5c6870;
+  @media (min-width: $width-tablet) {
+    fill: $color-white;
+  }
+}

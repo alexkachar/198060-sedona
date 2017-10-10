@@ -1,5 +1,26 @@
 .main-heading {
+  min-height: 348px;
+  padding-top: 200px;
   background-color: $color-white;
+  // background-image: url('../img/bg-back-mobile@1x.jpg');
+  // background-repeat: no-repeat;
+  // background-position: top center;
+  text-align: center;
+  &--index {
+    min-height: 628px;
+    padding-top: 390px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .main-heading {
+    min-height: 540px;
+    padding-top: 368px;
+  &--index {
+    min-height: 724px;
+    padding-top: 520px;
+    }
+  }
 }
 
 .main-heading__caption {

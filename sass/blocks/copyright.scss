@@ -1,0 +1,32 @@
+.copyright {
+  margin-left: auto;
+}
+
+.copyright__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: $color-black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+.copyright__svg {
+  margin-left: 11px;
+}
+
+.copyright__svg path {
+  fill: $color-black;
+}
+
+.copyright__link:hover path,
+.copyright__link:focus path {
+  fill: $color-blue-light;
+}
+
+.copyright__link:active path {
+  opacity: 0.3;
+}

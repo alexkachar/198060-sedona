@@ -1,10 +1,30 @@
 .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
   background-color: $color-white;
   &--single {
     background-color: $color-blue-light;
   }
   &--gray {
     background-color: $color-gray-light;
+  }
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+  }
+}
+
+.info--reverse {
+  @media (min-width: $width-tablet) {
+    flex-direction: row-reverse;
+  }
+}
+
+.info--row {
+  min-height: 320px;
+  @media (min-width: $width-tablet) {
+    min-height: 330px;
   }
 }
 
@@ -25,5 +45,60 @@
   color: $color-brown-dark;
   &--white {
     color: $color-white;
+  }
+}
+
+.info__article {
+  @media (min-width: $width-tablet) {
+    width: 256px;
+  }
+  @media (min-width: $width-desktop) {
+    width: 400px;
+  }
+}
+
+.info__article--single {
+  min-height: 191px;
+}
+
+.info__article--pictured {
+  padding-left: 70px;
+  padding-right: 40px;
+  text-align: left;
+  @media (min-width: $width-tablet) {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.info__figure {
+  height: 256px;
+  margin: 0;
+  padding: 0;
+  @media (min-width: $width-tablet) {
+    width: 512px;
+  }
+  @media (min-width: $width-desktop) {
+    width: 800px;
+  }
+}
+
+.info__caption--numbered {
+  position: relative;
+  margin-bottom: 55px;
+  counter-increment: article-numbered;
+  &::after {
+    content: "— № " counter(article-numbered) " —";
+    left: calc(50% - 45px);
+    bottom: -35px;
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    font-family: inherit;
+    width: 100px;
+    height: 20px;
+    z-index: 1;
   }
 }

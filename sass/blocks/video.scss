@@ -1,0 +1,23 @@
+.video {
+  min-height: 520px;
+  text-align: center;
+  padding-top: 39px;
+  @media (min-width: $width-tablet) {
+    padding-top: 69px;
+  }
+  @media (min-width: $width-desktop) {
+    padding-top: 73px;
+  }
+}
+
+.video__caption {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.video__text {
+  font-style: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+}
