@@ -11,13 +11,7 @@
 }
 
 .photo__item {
-  @media (min-width: $width-tablet) {
-    width: 378px;
-  }
-  @media (min-width: $width-desktop) {
-    width: 400px;
-  }
-
+  width: 50%;
 }
 
 .photo__item--wide {
@@ -25,15 +19,9 @@
 }
 
 .photo__figure {
-  width: 320px;
+  width: 100%;
   margin: 0;
   padding: 0;
-  @media (min-width: $width-tablet) {
-    width: $width-tablet;
-  }
-  @media (min-width: $width-desktop) {
-    width: $width-desktop;
-  }
 }
 
 .photo__caption {

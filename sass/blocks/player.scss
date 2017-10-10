@@ -14,6 +14,11 @@
 
 .player__controls {
   position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
   left: 20px;
   bottom: -70px;
   width: 280px;
@@ -31,12 +36,14 @@
 }
 
 .player__timeline {
+  align-self: flex-start;
   position: relative;
   height: 45px;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 5;
   @media (min-width: $width-tablet) {
     height: 92px;
+    align-self: auto;
   }
 }
 
@@ -78,28 +85,18 @@
   }
 }
 
-.player__playback-options {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  height: 66px;
-  background-color: $color-gray-light;
-  @media (min-width: $width-tablet) {
-    width: 100%;
-    position: absolute;
-    bottom: 10px;
-    background: none;
-    z-index: 10;
-  }
-}
-
 .player__btn {
+  align-self: flex-end;
   padding: 0;
   margin: 0;
+  margin-bottom: 24px;
   background: none;
   border: none;
   cursor: pointer;
+  @media (min-width: $width-tablet) {
+    align-self: auto;
+    margin-bottom: 0;
+  }
 }
 
 .player__btn--replay {
