@@ -10,13 +10,13 @@
   &--gray {
     background-color: $color-gray-light;
   }
-}
-
-@media (min-width: $width-tablet) {
-  .info {
+  @media (min-width: $width-tablet) {
     flex-direction: row;
   }
-  .info--reverse {
+}
+
+.info--reverse {
+  @media (min-width: $width-tablet) {
     flex-direction: row-reverse;
   }
 }
