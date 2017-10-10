@@ -29,7 +29,7 @@
         <section class="form">
           <h2 class="visually-hidden">Форма отзыва</h2>
           <form class="form__self" action="https://echo.htmlacademy.ru" method="post">
-            <div class="form__fieldset-cover form__fieldset-cover--1">
+            <div class="form__fieldset-cover">
               <fieldset class="form__fieldset">
                 <p class="form__fieldset-caption">Представьтесь:</p>
                 <p class="form__field-wrapper">
@@ -46,7 +46,7 @@
                 </p>
               </fieldset>
             </div>
-            <div class="form__fieldset-cover form__fieldset-cover--2">
+            <div class="form__fieldset-cover form__fieldset-cover--wide">
               <fieldset class="form__fieldset">
                 <p class="form__fieldset-caption">Контактная информация:</p>
                 <div class="form__contacts-wrapper">
@@ -61,7 +61,7 @@
                 </div>
               </fieldset>
             </div>
-            <div class="form__fieldset-cover form__fieldset-cover--3">
+            <div class="form__fieldset-cover form__fieldset-cover--order">
               <fieldset class="form__fieldset">
                 <p class="form__fieldset-caption">Ваше общее впечатление:</p>
                 <ul class="form__input-list">
@@ -86,7 +86,7 @@
                 </ul>
               </fieldset>
             </div>
-            <div class="form__fieldset-cover form__fieldset-cover--4">
+            <div class="form__fieldset-cover form__fieldset-cover--wide">
               <fieldset class="form__fieldset">
                 <p class="form__fieldset-caption">Посещенные достопримечательности:</p>
                 <ul class="form__input-list form__input-list--checkboxes">
@@ -117,12 +117,15 @@
                 </ul>
               </fieldset>
             </div>
-            <div class="form__fieldset-cover form__fieldset-cover--5">
+            <div class="form__fieldset-cover">
               <fieldset class="form__fieldset">
                 <label class="form__fieldset-caption form__textarea-label" for="form-textarea">Опишите свои эмоции:</label>
                 <textarea class="form__textarea" id="form-textarea" name="form-text" rows="5" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
               </fieldset>
-              <button class="btn form__btn" type="submit">Отправить отзыв</button>
+              <div class="form__btn-cover">
+                <button class="btn form__btn" type="submit">Отправить отзыв</button>
+                <p class="form__footnote">* — обязательные поля</p>
+              </div>
             </div>
 
           </form>
