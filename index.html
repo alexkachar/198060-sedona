@@ -33,8 +33,11 @@
       <main class="page-main">
 
         <div class="main-heading main-heading--index">
-          <h1 class="main-heading__caption">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
-          <p class="main-heading__text">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче чем гранд каньон!</p>
+          <div class="main-heading__canvas main-heading__canvas--index"></div>
+          <div class="main-heading__cover">
+            <h1 class="main-heading__caption">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
+            <p class="main-heading__text">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче чем гранд каньон!</p>
+          </div>
         </div>
 
 
@@ -46,8 +49,13 @@
           </article>
 
           <figure class="info__figure">
-            <img class="info__img" src="img/main-city-mobile@1x.jpg" alt="В городе" >
+            <picture class="info__picture">
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+              <img class="info__img" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="В городе">
+            </picture>
           </figure>
+
         </section>
 
         <section class="info info--row">
@@ -79,8 +87,13 @@
           </article>
 
           <figure class="info__figure">
-            <img class="info__img" src="img/main-bridge-mobile@1x.jpg" alt="Мост Дьявола" >
+            <picture class="info__picture">
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+              <img class="info__img" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+            </picture>
           </figure>
+
         </section>
 
         <section class="info info--row info--gray">

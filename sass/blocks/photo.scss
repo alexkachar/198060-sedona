@@ -1,5 +1,6 @@
 .photo {
   display: flex;
+  @include paddings-standart;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;

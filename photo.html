@@ -27,16 +27,25 @@
       <main class="page-main">
 
         <div class="main-heading">
-          <h1 class="main-heading__caption">Фото и видео</h1>
-          <p class="main-heading__text">Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.</p>
+          <div class="main-heading__canvas"></div>
+          <div class="main-heading__cover">
+            <h1 class="main-heading__caption">Фото и видео</h1>
+            <p class="main-heading__text">Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.</p>
+          </div>
         </div>
 
         <section class="photo">
           <h2 class="visually-hidden">Фото</h2>
+
           <article class="photo__item photo__item--wide post">
             <figure class="photo__figure">
-              <img class="photo__img" src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы">
+              <picture class="photo__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-sunset-mobile@1x.jpg" srcset="iimg/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+              </picture>
             </figure>
+
             <h3 class="photo__caption">Неродные просторы</h3>
             <p class="photo__author">Автор фото:&nbsp;<span class="photo__name">Борис</span></p>
             <p class="photo__likes">
@@ -44,10 +53,17 @@
               <span class="photo__like-count">1350</span>
             </p>
           </article>
+
           <article class="photo__item post">
+
             <figure class="photo__figure">
-              <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
+              <picture class="photo__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
+              </picture>
             </figure>
+
             <h3 class="photo__caption">Местная растительность</h3>
             <p class="photo__author">Автор фото:&nbsp;<span class="photo__name">Сергей</span></p>
             <p class="photo__likes">
@@ -55,10 +71,16 @@
               <span class="photo__like-count">143</span>
             </p>
           </article>
+
           <article class="photo__item post">
             <figure class="photo__figure">
-              <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
+              <picture class="photo__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
+              </picture>
             </figure>
+
             <h3 class="photo__caption">Дорога на&nbsp;север</h3>
             <p class="photo__author">Автор фото:&nbsp;<span class="photo__name">Петр</span></p>
             <p class="photo__likes">
@@ -66,10 +88,16 @@
               <span class="photo__like-count">96</span>
             </p>
           </article>
+
           <article class="photo__item post">
             <figure class="photo__figure">
-              <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола">
+              <picture class="photo__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg.jpg" srcset="img/photo-bridge-mobile@2x.jpg.jpg 2x" alt="Мост дьявола">
+              </picture>
             </figure>
+
             <h3 class="photo__caption">Мост дьявола</h3>
             <p class="photo__author">Автор фото:&nbsp;<span class="photo__name">Антон</span></p>
             <p class="photo__likes">
@@ -85,7 +113,7 @@
           <p class="video__text">Смотрите видеопрезентацию и&nbsp;скорее за&nbsp;билетами, пока они не&nbsp;подорожали в&nbsp;очередной раз!</p>
           <div class="player">
             <div class="player__playback-area">
-              <video class="player__video" src="#" poster="img/video-mobile@1x.jpg"></video>
+              <video class="player__video" src="#"></video>
             </div>
             <div class="player__controls">
               <div class="player__timeline">
