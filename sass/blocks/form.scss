@@ -4,12 +4,14 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   @include paddings-standart;
+
   @media (min-width: $width-tablet) {
     flex-direction: row;
   }
 }
 
 .form__fieldset-cover {
+
   @media (min-width: $width-tablet) {
     justify-content: space-between;
     flex-basis: 50%;
@@ -18,12 +20,14 @@
 }
 
 .form__fieldset-cover--order {
+
   @media (min-width: $width-tablet) {
     order: -1;
   }
 }
 
 .form__fieldset-cover--wide {
+
   @media (min-width: $width-tablet) {
     flex-basis: 100%;
   }
@@ -38,6 +42,7 @@
   text-transform: uppercase;
   border: 0;
   border-bottom: 1px solid $color-gray-light;
+
   @media (min-width: $width-tablet) {
     border-bottom: 0;
   }
@@ -98,6 +103,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
   @media (min-width: $width-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -105,9 +111,11 @@
 }
 
 .form__input-item--checkboxes {
+
   @media (min-width: $width-tablet) {
     flex-basis: 50%;
   }
+
   @media (min-width: $width-desktop) {
     flex-basis: 25%;
   }
@@ -123,6 +131,7 @@
 }
 
 .form__field-wrapper--contacts {
+
   @media (min-width: $width-desktop) {
     flex-basis: 50%;
   }
@@ -142,9 +151,11 @@
 .form__btn {
   display: block;
   width: 280px;
+
   @media (min-width: $width-tablet) {
     width: 324px;
   }
+
   @media (min-width: $width-desktop) {
     width: 480px;
   }
@@ -156,6 +167,7 @@
   font-size: 14px;
   line-height: 1.85;
   font-family: $font;
+
   @media (min-width: $width-tablet) {
     display: block;
   }
