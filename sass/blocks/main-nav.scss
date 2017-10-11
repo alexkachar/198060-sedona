@@ -1,6 +1,7 @@
 .main-nav {
   min-height: 223px;
   background-color: $color-blue-light;
+
   @media (min-width: $width-tablet) {
     min-height: 56px;
     background-color: $color-white;
