@@ -1,6 +1,10 @@
 .main-heading {
   background-color: $color-white;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+  padding-bottom: 58px;
+  }
 }
 
 .main-heading__canvas {
