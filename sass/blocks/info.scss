@@ -61,6 +61,19 @@
   min-height: 191px;
 }
 
+.info__article--triangle {
+  background-image: url("../img/bg-triangle.svg");
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding-top: 60px;
+
+  @media (min-width: $width-tablet) {
+    background-image: none;
+    padding-top: 50px;
+  }
+}
+
 .info__article--pictured {
   padding-left: 70px;
   padding-right: 40px;
