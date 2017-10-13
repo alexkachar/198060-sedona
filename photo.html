@@ -29,16 +29,14 @@
 
         <div class="main-heading">
           <div class="main-heading__canvas"></div>
-          <div class="main-heading__cover">
-            <h1 class="main-heading__caption">Фото и видео</h1>
-            <p class="main-heading__text">Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.</p>
-          </div>
+          <h1 class="main-heading__caption">Фото и видео</h1>
+          <p class="main-heading__text">Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.</p>
         </div>
 
         <section class="photo">
           <h2 class="visually-hidden">Фото</h2>
 
-          <article class="photo__item photo__item--wide post">
+          <article class="photo__post photo__post--wide post">
             <figure class="photo__figure">
               <picture class="photo__picture">
                 <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
@@ -47,15 +45,17 @@
               </picture>
             </figure>
 
-            <h3 class="photo__caption">Неродные просторы</h3>
-            <p class="photo__author">Автор фото:&nbsp;<span class="photo__name">Борис</span></p>
-            <p class="photo__likes">
-              <button class="photo__like-button" aria-label="Лайк">Лайк</button>
-              <span class="photo__like-count">1350</span>
-            </p>
+            <div class="photo__info">
+              <h3 class="photo__caption">Неродные просторы</h3>
+              <p class="photo__author">Автор фото:&nbsp;<span class="photo__name">Борис</span></p>
+              <p class="photo__likes">
+                <button class="photo__like-button" aria-label="Лайк">Лайк</button>
+                <span class="photo__like-count">1350</span>
+              </p>
+            </div>
           </article>
 
-          <article class="photo__item post">
+          <article class="photo__post post">
 
             <figure class="photo__figure">
               <picture class="photo__picture">
@@ -65,15 +65,17 @@
               </picture>
             </figure>
 
-            <h3 class="photo__caption">Местная растительность</h3>
-            <p class="photo__author">Автор фото:&nbsp;<span class="photo__name">Сергей</span></p>
-            <p class="photo__likes">
-              <button class="photo__like-button" aria-label="Лайк">Лайк</button>
-              <span class="photo__like-count">143</span>
-            </p>
+            <div class="photo__info">
+              <h3 class="photo__caption">Местная растительность</h3>
+              <p class="photo__author">Автор фото:&nbsp;<span class="photo__name">Сергей</span></p>
+              <p class="photo__likes">
+                <button class="photo__like-button" aria-label="Лайк">Лайк</button>
+                <span class="photo__like-count">143</span>
+              </p>
+            </div>
           </article>
 
-          <article class="photo__item post">
+          <article class="photo__post post">
             <figure class="photo__figure">
               <picture class="photo__picture">
                 <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
@@ -82,29 +84,33 @@
               </picture>
             </figure>
 
-            <h3 class="photo__caption">Дорога на&nbsp;север</h3>
-            <p class="photo__author">Автор фото:&nbsp;<span class="photo__name">Петр</span></p>
-            <p class="photo__likes">
-              <button class="photo__like-button" aria-label="Лайк">Лайк</button>
-              <span class="photo__like-count">96</span>
-            </p>
+            <div class="photo__info photo__info--bg-darker">
+              <h3 class="photo__caption">Дорога на&nbsp;север</h3>
+              <p class="photo__author">Автор фото:&nbsp;<span class="photo__name">Петр</span></p>
+              <p class="photo__likes">
+                <button class="photo__like-button" aria-label="Лайк">Лайк</button>
+                <span class="photo__like-count">96</span>
+              </p>
+            </div>
           </article>
 
-          <article class="photo__item post">
+          <article class="photo__post post">
             <figure class="photo__figure">
               <picture class="photo__picture">
                 <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg.jpg" srcset="img/photo-bridge-mobile@2x.jpg.jpg 2x" alt="Мост дьявола">
+                <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
               </picture>
             </figure>
 
-            <h3 class="photo__caption">Мост дьявола</h3>
-            <p class="photo__author">Автор фото:&nbsp;<span class="photo__name">Антон</span></p>
-            <p class="photo__likes">
-              <button class="photo__like-button" aria-label="Лайк">Лайк</button>
-              <span class="photo__like-count">254</span>
-            </p>
+            <div class="photo__info">
+              <h3 class="photo__caption">Мост дьявола</h3>
+              <p class="photo__author">Автор фото:&nbsp;<span class="photo__name">Антон</span></p>
+              <p class="photo__likes">
+                <button class="photo__like-button" aria-label="Лайк">Лайк</button>
+                <span class="photo__like-count">254</span>
+              </p>
+            </div>
           </article>
         </section>
 
