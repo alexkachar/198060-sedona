@@ -74,6 +74,7 @@
 
 .photo__info {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 22px;
@@ -89,9 +90,7 @@
 
   @media (min-width: $width-desktop) {
     margin-top: -80px;
-    z-index: 1;
-    background-color: $color-black;
-    opacity: 0.3;
+    background-color: $color-black-transparent;
   }
 }
 
@@ -102,8 +101,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    background-color: $color-black;
-    opacity: 0.3;
+    background-color: $color-black-transparent;
   }
 }
 
