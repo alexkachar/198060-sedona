@@ -73,44 +73,74 @@
 }
 
 .photo__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 22px;
+  padding-bottom: 22px;
 
   @media (min-width: $width-tablet) {
+    height: 80px;
+    padding-left: 20px;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: $color-gray-light-bg;
   }
 
   @media (min-width: $width-desktop) {
-    background-color: $color-black-transparent;
+    margin-top: -80px;
+    z-index: 1;
+    background-color: $color-black;
+    opacity: 0.3;
   }
 }
 
-.photo__info--bg-darker {
+.photo__info--bg-dark{
 
   @media (min-width: $width-tablet) {
     background-color: $color-gray-moderate-post;
   }
 
   @media (min-width: $width-desktop) {
-    background-color: $color-black-transparent;
+    background-color: $color-black;
+    opacity: 0.3;
   }
 }
 
 .photo__caption {
   margin-top: 0;
+  margin-bottom: 14px;
   font-size: 14px;
   line-height: 1.7;
   font-weight: 700;
   color: $color-black;
+
+  @media (min-width: $width-desktop) {
+    color: $color-white;
+  }
 }
 
 .photo__likes {
+  width: 85px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
 .photo__author {
+  margin: 0;
+  margin-bottom: 11px;
   font-size: 14px;
   line-height: 1.7;
   font-weight: 400;
   color: $color-brown-dark;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    color: $color-white;
+  }
 }
 
 .photo__like-count {
@@ -118,4 +148,39 @@
   line-height: 1.7;
   font-weight: 700;
   color: $color-black;
+
+  @media (min-width: $width-desktop) {
+    color: $color-white;
+  }
+}
+
+.photo__like-btn {
+  width: 22px;
+  height: 20px;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.photo__btn-svg {
+  width: 22px;
+  height: 20px;
+  fill: $color-black;
+  opacity: 0.3;
+
+  @media (min-width: $width-desktop) {
+    fill: $color-white;
+    opacity: 1;
+  }
+}
+
+.photo__like-btn:hover .photo__btn-svg,
+.photo__like-btn:focus .photo__btn-svg {
+  fill: $color-blue-light;
+  opacity: 1;
+}
+
+.photo__like-btn:active .photo__btn-svg {
+  fill: $color-black;
+  opacity: 1;
 }
