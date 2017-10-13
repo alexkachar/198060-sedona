@@ -1,4 +1,9 @@
 .social {
+
+  @media (min-width: $width-tablet) {
+    margin-left: 112px;
+  }
+
   @media (min-width: $width-desktop) {
     margin-left: 255px;
   }

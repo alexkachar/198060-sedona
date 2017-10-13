@@ -4,6 +4,18 @@
   justify-content: flex-start;
   text-align: center;
   padding-bottom: 49px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 155px;
+    padding-right: 155px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 371px;
+    padding-right: 371px;
+  }
 }
 
 .order__caption {
