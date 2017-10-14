@@ -1,3 +1,11 @@
+.form {
+  border-top: 1px solid $color-gray-moderate;
+
+  @media (min-width: $width-tablet) {
+    border-top: none;
+  }
+}
+
 .form__self {
   display: flex;
   flex-direction: column;
@@ -22,6 +30,7 @@
 
   @media (min-width: $width-tablet) {
     order: -1;
+    border-right: 1px solid $color-gray-dark-border;
   }
 }
 
