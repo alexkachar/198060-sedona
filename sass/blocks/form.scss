@@ -3,7 +3,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  @include paddings-standart;
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
@@ -48,6 +47,23 @@
   }
 }
 
+.form__input-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__input-list--checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .form__fieldset-caption {
   font-size: 18px;
   font-weight: 700;
@@ -74,69 +90,6 @@
   &::placeholder {
     color: $color-black;
     opacity: 1;
-  }
-}
-
-.form__input-text-label {
-  font-family: $font;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  color: $color-brown-dark;
-  text-transform: uppercase;
-}
-
-.form__input-radio-label,
-.form__input-checkbox-label{
-  font-family: $font;
-  font-size: 18px;
-  line-height: 1.45;
-  font-weight: 700;
-  color: $color-black;
-  text-transform: uppercase;
-}
-
-.form__input-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.form__input-list--checkboxes {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  @media (min-width: $width-tablet) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-.form__input-item--checkboxes {
-
-  @media (min-width: $width-tablet) {
-    flex-basis: 50%;
-  }
-
-  @media (min-width: $width-desktop) {
-    flex-basis: 25%;
-  }
-}
-
-.form__contacts-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  @media (min-width: $width-desktop) {
-    flex-direction: row;
-  }
-}
-
-.form__field-wrapper--contacts {
-
-  @media (min-width: $width-desktop) {
-    flex-basis: 50%;
   }
 }
 
@@ -176,10 +129,136 @@
   }
 }
 
+//кастомизация полей ввода
+
+.form__input-span {
+
+  @media (min-width: $width-desktop) {
+    display: none;
+  }
+}
+
+.form__input-text-label {
+  margin-right: 14px;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $color-brown-dark;
+  text-transform: uppercase;
+}
+
+.form__input-text-label--contacts {
+  margin-left: 14px;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 22px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 0;
+    flex-shrink: 0;
+  }
+}
+
+.form__input-text {
+  flex-grow: 1;
+  width: 100%;
+  height: 58px;
+  padding-left: 22px;
+  font-size: 18px;
+  color: $color-black;
+  line-height: 1.45;
+  font-family: $font;
+  font-weight: 700;
+  border: none;
+  background-color: $color-gray-light-bg;
+
+    &::placeholder {
+      color: $color-black;
+      opacity: 1;
+  }
+}
+
+.form__input-text--contacts {
+  flex-basis: 100%;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 19px) 50%, right;
+}
+
+.form__input-text--telephone {
+  background-image: url("../img/icon-phone.svg"),
+                    linear-gradient(to left, $color-gray-moderate-bg 58px,
+                                             $color-gray-light-bg 58px);
+  &:hover,
+  &:focus {
+    background-image: url("../img/icon-phone.svg"),
+                      linear-gradient(to left, $color-gray-moderate-bg 58px,
+                                                  $color-gray-moderate 58px);
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-right: 80px;
+  }
+}
+
+.form__input-text--email {
+  background-image: url("../img/icon-mail.svg"),
+                    linear-gradient(to left, $color-gray-moderate-bg 58px,
+                                             $color-gray-light-bg 58px);
+  &:hover,
+  &:focus {
+    background-image: url("../img/icon-mail.svg"),
+                      linear-gradient(to left, $color-gray-moderate-bg 58px,
+                                               $color-gray-moderate 58px);
+  }
+}
+
+.form__input-text:hover {
+  background-color: $color-gray-moderate;
+}
+
+.form__field-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__field-wrapper--contacts {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  @media (min-width: $width-desktop) {
+    flex-basis: 50%;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.form__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  @media (min-width: $width-desktop) {
+    flex-direction: row;
+  }
+}
+
 //кастомизация чекбоксов
 
 .form__input-item--checkboxes {
   margin-bottom: 54px;
+
+  @media (min-width: $width-tablet) {
+    flex-basis: 50%;
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-basis: 25%;
+  }
 }
 
 .form__checkbox {
@@ -199,6 +278,7 @@
   font-size: 18px;
   line-height: 1.45;
   font-weight: 700;
+  font-family: $font;
   text-transform: none;
 }
 
@@ -244,6 +324,9 @@
 }
 
 .form__radio-label {
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   cursor: pointer;
   user-select: none;
 }
@@ -253,6 +336,7 @@
   font-size: 18px;
   line-height: 1.45;
   font-weight: 700;
+  font-family: $font;
   text-transform: none;
 }
 

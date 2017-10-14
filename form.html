@@ -10,7 +10,9 @@
     <div class="page-wrapper">
       <header class="page-header">
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button" aria-label="открыть">Открыть меню</button>
+          <button class="main-nav__toggle" type="button" aria-label="открыть">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html" >Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="photo.html" >Фото и&nbsp;видео</a></li>
@@ -30,9 +32,11 @@
             <p class="main-heading__text">Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных Вами достопримечательностях</p>
           </div>
         </div>
+
         <section class="form">
           <h2 class="visually-hidden">Форма отзыва</h2>
           <form class="form__self" action="https://echo.htmlacademy.ru" method="post">
+
             <div class="form__fieldset-cover">
               <fieldset class="form__fieldset">
                 <p class="form__fieldset-caption">Представьтесь:</p>
@@ -50,21 +54,26 @@
                 </p>
               </fieldset>
             </div>
+
             <div class="form__fieldset-cover form__fieldset-cover--wide">
               <fieldset class="form__fieldset">
                 <p class="form__fieldset-caption">Контактная информация:</p>
                 <div class="form__contacts-wrapper">
                   <p class="form__field-wrapper form__field-wrapper--contacts">
-                    <label class="form__input-text-label" for="telephone">Контактный телефон*:</label>
-                    <input class="form__input-text form__input-text--telephone" id="telephone" name="telephone" type="tel" placeholder="Введите телефон" required>
+                    <label class="form__input-text-label form__input-text-label--contacts" for="telephone">
+                      <span class="form__input-span">Контактный</span>
+                      телефон*:
+                    </label>
+                    <input class="form__input-text form__input-text--contacts form__input-text--telephone" id="telephone" name="telephone" type="tel" placeholder="Введите телефон" required>
                   </p>
-                  <p class="form__field-wrapper">
-                    <label class="form__input-text-label" for="email">Электронная почта*:</label>
-                    <input class="form__input-text form__input-text--email" id="email" name="email" type="email" placeholder="Введите e-mail" required>
+                  <p class="form__field-wrapper form__field-wrapper--contacts">
+                    <label class="form__input-text-label form__input-text-label--contacts" for="email">Электронная почта*:</label>
+                    <input class="form__input-text form__input-text--contacts form__input-text--email" id="email" name="email" type="email" placeholder="Введите e-mail" required>
                   </p>
                 </div>
               </fieldset>
             </div>
+
             <div class="form__fieldset-cover form__fieldset-cover--order">
               <fieldset class="form__fieldset">
                 <p class="form__fieldset-caption">Ваше общее впечатление:</p>
@@ -95,6 +104,7 @@
                 </ul>
               </fieldset>
             </div>
+
             <div class="form__fieldset-cover form__fieldset-cover--wide">
               <fieldset class="form__fieldset">
                 <p class="form__fieldset-caption">Посещенные достопримечательности:</p>
@@ -126,6 +136,7 @@
                 </ul>
               </fieldset>
             </div>
+
             <div class="form__fieldset-cover">
               <fieldset class="form__fieldset">
                 <label class="form__fieldset-caption form__textarea-label" for="form-textarea">Опишите свои эмоции:</label>
