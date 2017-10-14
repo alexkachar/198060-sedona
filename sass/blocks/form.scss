@@ -69,8 +69,11 @@
   line-height: 1.45;
   color: $color-black;
   resize: none;
+  border: none;
+
   &::placeholder {
     color: $color-black;
+    opacity: 1;
   }
 }
 
@@ -171,4 +174,106 @@
   @media (min-width: $width-tablet) {
     display: block;
   }
+}
+
+//кастомизация чекбоксов
+
+.form__input-item--checkboxes {
+  margin-bottom: 54px;
+}
+
+.form__checkbox {
+  display: none;
+}
+
+.form__checkbox-label {
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form__checkbox-span {
+  position: relative;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.form__checkbox-span::before {
+  content: "";
+  position: absolute;
+  left: -81px;
+  top: -14px;
+  width: 56px;
+  height: 56px;
+  background-color: $color-gray-light-bg;
+  border-radius: 5px;
+}
+
+.form__checkbox-label:hover .form__checkbox-span::before,
+.form__checkbox-label:focus .form__checkbox-span::before {
+  background-color: $color-gray-moderate;
+}
+
+.form__checkbox-label:active .form__checkbox-span::before {
+  background-color: $color-gray-dark-bg;
+}
+
+.form__checkbox:checked + .form__checkbox-span::after {
+  content: "";
+  position: absolute;
+  left: -62px;
+  top: 5px;
+  width: 23px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+//кастомизация радио
+
+.form__input-item--radio {
+  margin-bottom: 43px;
+}
+
+.form__radio {
+  display: none;
+}
+
+.form__radio-label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.form__radio-span {
+  position: relative;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.form__radio-span::before {
+  content: "";
+  position: absolute;
+  left: -79px;
+  top: -16px;
+  width: 56px;
+  height: 56px;
+  background-color: $color-gray-light-bg;
+  border-radius: 50%;
+}
+
+.form__radio:checked + .form__radio-span::after {
+  content: "";
+  position: absolute;
+  left: -62px;
+  top: 1px;
+  width: 22px;
+  height: 22px;
+  background-color: $color-brown-dark;
+  border-radius: 50%;
 }
