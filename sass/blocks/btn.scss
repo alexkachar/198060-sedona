@@ -11,4 +11,14 @@
   color: $color-white;
   background-color: $color-blue-light;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-blue-moderate;
+  }
+  &:active {
+    color: $color-white-transperent;
+    background-color: $color-blue-dark;
+  }
+
 }
