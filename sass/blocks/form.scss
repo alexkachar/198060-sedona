@@ -267,6 +267,15 @@
   border-radius: 50%;
 }
 
+.form__radio-label:hover .form__radio-span::before,
+.form__radio-label:focus .form__radio-span::before {
+  background-color: $color-gray-moderate;
+}
+
+.form__checkbox-label:active .form__checkbox-span::before {
+  background-color: $color-gray-dark-bg;
+}
+
 .form__radio:checked + .form__radio-span::after {
   content: "";
   position: absolute;
