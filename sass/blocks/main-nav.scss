@@ -5,7 +5,7 @@
   background-color: $color-blue-light;
 
   @media (min-width: $width-tablet) {
-    min-height: 56px;
+    min-height: 55px;
     background-color: $color-white;
   }
 }
@@ -18,41 +18,20 @@
   display: block;
 }
 
-.main-nav__item {
-  margin-bottom: 1px;
-  padding-top: 8px;
-  min-height: 55px;
-  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.2) inset,
-              0px 1px 0px 0px rgba(1, 1, 1, 0.2);
-
-  @media (min-width: $width-tablet) {
-    box-shadow: none;
-  }
-}
-
-.main-nav__link {
-  font-size: 18px;
-  line-height: 2.25;
-  font-weight: 700;
-  color: $color-white;
-  text-decoration: none;
-  @media (min-width: $width-tablet) {
-    color: $color-black;
-  }
-}
-
 .main-nav__list {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: stretch;
   text-align: center;
   margin: 0;
   padding: 0;
   list-style: none;
   @media (min-width: $width-tablet) {
+    padding-top: 14px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     padding-left: 49px;
     padding-right: 26px;
   }
@@ -62,6 +41,68 @@
   }
 }
 
+.main-nav__item {
+  margin-bottom: 1px;
+  padding-top: 8px;
+  min-height: 55px;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.2) inset,
+              0px 1px 0px 0px rgba(1, 1, 1, 0.2);
+
+  &:hover,
+  &:focus {
+    background-color: $color-blue-moderate;
+
+    @media (min-width: $width-tablet) {
+      background: none;
+    }
+  }
+
+  &:active {
+    background: $color-blue-dark;
+
+    @media (min-width: $width-tablet) {
+      background-color: none;
+    }
+  }
+
+  &--disabled {
+    background-color: $color-gray-moderate;
+
+    @media (min-width: $width-tablet) {
+      background: none;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    padding-top: 0;
+    min-height: 0;
+    box-shadow: none;
+  }
+}
+
+.main-nav__item:first-child {
+  margin-right: 77px;
+}
+
+.main-nav__item:nth-child(3) {
+  margin-left: auto;
+  margin-right: 49px;
+}
+
+
+.main-nav__link {
+  font-size: 18px;
+  line-height: 2.25;
+  font-weight: 700;
+  color: $color-white;
+  text-decoration: none;
+
+  @media (min-width: $width-tablet) {
+    font-size: 14px;
+    color: $color-black;
+    line-height: 1.85;
+  }
+}
 
 .main-nav__toggle {
   width: 23px;

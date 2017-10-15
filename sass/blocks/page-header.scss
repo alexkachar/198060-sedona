@@ -2,6 +2,10 @@
   min-height: 279px;
   position: relative;
   background-color: $color-white;
+
+  @media (min-width: $width-tablet) {
+    min-height: 56px;
+  }
 }
 
 .page-header__logo {

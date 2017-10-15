@@ -54,11 +54,27 @@
     color: $color-brown-dark;
   }
   &--white {
-    color: $color-white;
     margin-top: 40px;
+    color: $color-white;
   }
   &--triangle {
     margin-top: 15px;
+  }
+}
+
+.info__caption {
+
+  @media (min-width: $width-tablet) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.info__caption--white {
+
+  @media (min-width: $width-tablet) {
+    line-height: 1.25;
+    font-size: 21px;
   }
 }
 
@@ -117,23 +133,21 @@
 
 .info__article--single {
   padding-bottom: 23px;
-
-  @media (min-width: $width-tablet) {
-    min-height: 256px;
-  }
 }
 
 .info__article--triangle {
+  padding-top: 60px;
   padding-bottom: 26px;
   background-image: url("../img/bg-triangle.svg");
   background-position: 100% 0%;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding-top: 60px;
 
   @media (min-width: $width-tablet) {
+    margin-top: 30px;
     background-image: none;
-    padding-top: 50px;
+    padding-top: 0px;
+    padding-bottom: 10px;
   }
 }
 

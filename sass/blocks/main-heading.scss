@@ -4,7 +4,8 @@
   padding-bottom: 6px;
 
   @media (min-width: $width-tablet) {
-  padding-bottom: 58px;
+  margin-top: -2px;
+  padding-bottom: 49px;
   }
 }
 
@@ -70,9 +71,11 @@
 
   @media (min-width: $width-tablet) {
     min-height: 520px;
+    margin-bottom: 48px;
     background-image: url("../img/text-sedona-index.svg"),
                       url("../img/bg-intro-triangle-tablet.svg"),
                       url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 46%, 100% 100%, 50% 100%;
     background-size: 460px 350px, 100% auto, 768px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -105,6 +108,14 @@
   line-height: 1.45;
   font-weight: 700;
   color: $color-black;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 31px;
+    padding-left: 90px;
+    padding-right: 90px;
+    font-size: 21px;
+    line-height: 1.25;
+  }
 }
 
 .main-heading__text {
