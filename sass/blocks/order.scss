@@ -19,11 +19,22 @@
 }
 
 .order__caption {
+  margin-top: 27px;
+  margin-bottom: 9px;
   font-size: 21px;
   font-weight: 700;
   line-height: 1.25;
 }
 
+.order__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
 .order__btn {
+  height: 58px;
   display: block;
+  padding-top: 15px;
 }

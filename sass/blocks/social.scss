@@ -1,4 +1,5 @@
 .social {
+  margin-bottom: 38px;
 
   @media (min-width: $width-tablet) {
     margin-left: 112px;
@@ -19,7 +20,7 @@
 }
 
 .social__item {
-  margin-right: 6px;
+  margin-right: 5px;
 }
 
 .social__item:last-child {

@@ -20,6 +20,7 @@
 
 .main-nav__item {
   margin-bottom: 1px;
+  padding-top: 8px;
   min-height: 55px;
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.2) inset,
               0px 1px 0px 0px rgba(1, 1, 1, 0.2);
@@ -62,15 +63,25 @@
 }
 
 
-.main-nav__btn-open {
-  bottom: -40px;
-  right: 20px;
+.main-nav__toggle {
+  width: 23px;
+  height: 22px;
+  bottom: -37px;
+  right: 21px;
   position: absolute;
   background: none;
   border: none;
-  fill: $color-blue-light;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 
   @media (min-width: $width-tablet) {
     display: none;
   }
+}
+
+.main-nav__toggle--close {
+  top: 17px;
+  right: 21px;
+  background-image: url("../img/icon-cross.svg");
 }
