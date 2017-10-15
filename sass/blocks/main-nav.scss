@@ -27,6 +27,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
   @media (min-width: $width-tablet) {
     padding-top: 14px;
     flex-direction: row;
@@ -81,12 +82,18 @@
 }
 
 .main-nav__item:first-child {
-  margin-right: 77px;
+
+  @media (min-width: $width-tablet) {
+    margin-right: 77px;
+  }
 }
 
 .main-nav__item:nth-child(3) {
-  margin-left: auto;
-  margin-right: 49px;
+
+  @media (min-width: $width-tablet) {
+    margin-left: auto;
+    margin-right: 49px;
+  }
 }
 
 
