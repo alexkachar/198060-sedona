@@ -62,7 +62,7 @@
     background: $color-blue-dark;
 
     @media (min-width: $width-tablet) {
-      background-color: none;
+      background: none;
     }
   }
 
@@ -110,6 +110,20 @@
     line-height: 1.85;
   }
 }
+
+.main-nav__link:hover,
+.main-nav__link:focus {
+
+  @media (min-width: $width-tablet) {
+    color: $color-blue-light;
+  }
+}
+
+.main-nav__link:active {
+  color: $color-black-transparent-light;
+}
+
+
 
 .main-nav__toggle {
   width: 23px;

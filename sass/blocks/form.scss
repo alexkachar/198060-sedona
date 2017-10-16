@@ -199,11 +199,19 @@
   background-image: url("../img/icon-phone.svg"),
                     linear-gradient(to left, $color-gray-moderate-bg 58px,
                                              $color-gray-light-bg 58px);
-  &:hover,
-  &:focus {
+  &:hover {
     background-image: url("../img/icon-phone.svg"),
                       linear-gradient(to left, $color-gray-moderate-bg 58px,
                                                   $color-gray-moderate 58px);
+  }
+
+  &:active,
+  &:focus {
+    background-image: url("../img/icon-phone.svg"),
+                      linear-gradient(to left, $color-gray-moderate-bg 58px,
+                                                  $color-white 58px);
+    outline: 4px solid $color-gray-moderate;
+    outline-offset: -4px
   }
 
   @media (min-width: $width-desktop) {

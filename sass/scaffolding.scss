@@ -1,3 +1,5 @@
+@import-normalize;
+
 :root {
   font-family: $font;
   font-size: 14px;
@@ -6,9 +8,11 @@
   color: $color-brown-dark;
   text-transform: uppercase;
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
-  counter-reset: article-numbered;
 }
 
 *,
@@ -19,6 +23,7 @@
 
 img {
   max-width: 100%;
+  min-height: 1px;
   height: auto;
 }
 
