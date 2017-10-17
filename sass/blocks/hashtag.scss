@@ -5,6 +5,10 @@
   line-height: 1.25;
   font-weight: 700;
   text-decoration: none;
+
+  @media (min-width: $width-tablet) {
+    margin-top: -5px;
+  }
 }
 
 .hashtag:hover,

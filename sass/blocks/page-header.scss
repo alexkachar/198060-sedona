@@ -26,6 +26,7 @@
   }
 
   @media (min-width: $width-desktop) {
+    left: calc(50% - 94px);
     height: 96px;
     width: 187px;
     background-image: url("../img/logo-sedona-desktop.svg");
