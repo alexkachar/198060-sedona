@@ -43,7 +43,7 @@
           <form class="form__self" action="https://echo.htmlacademy.ru" method="post">
 
             <div class="form__fieldset-cover">
-              <fieldset class="form__fieldset">
+              <fieldset class="form__fieldset form__fieldset--names">
                 <p class="form__fieldset-caption">Представьтесь:</p>
                 <p class="form__field-wrapper">
                   <label class="form__input-text-label" for="first-name">Имя*:</label>
@@ -55,7 +55,7 @@
                 </p>
                 <p class="form__field-wrapper">
                   <label class="form__input-text-label" for="patronym">Отчество:</label>
-                  <input class="form__input-text" id="patronym" name="patronym" type="text" placeholder="Александрович">
+                  <input class="form__input-text form__input-text--patronym" id="patronym" name="patronym" type="text" placeholder="Александрович">
                 </p>
               </fieldset>
             </div>
@@ -64,7 +64,7 @@
               <fieldset class="form__fieldset">
                 <p class="form__fieldset-caption">Контактная информация:</p>
                 <div class="form__contacts-wrapper">
-                  <p class="form__field-wrapper form__field-wrapper--contacts">
+                  <p class="form__field-wrapper form__field-wrapper--telephone form__field-wrapper--contacts">
                     <label class="form__input-text-label form__input-text-label--contacts" for="telephone">
                       <span class="form__input-span">Контактный</span>
                       телефон*:
@@ -80,8 +80,8 @@
             </div>
 
             <div class="form__fieldset-cover form__fieldset-cover--order">
-              <fieldset class="form__fieldset">
-                <p class="form__fieldset-caption">Ваше общее впечатление:</p>
+              <fieldset class="form__fieldset form__fieldset--radio">
+                <p class="form__fieldset-caption form__fieldset-caption--radio">Ваше общее впечатление:</p>
 
                 <ul class="form__input-list">
 
@@ -142,8 +142,8 @@
               </fieldset>
             </div>
 
-            <div class="form__fieldset-cover">
-              <fieldset class="form__fieldset">
+            <div class="form__fieldset-cover form__fieldset-cover--textarea">
+              <fieldset class="form__fieldset form__fieldset--textarea">
                 <label class="form__fieldset-caption form__textarea-label" for="form-textarea">Опишите свои эмоции:</label>
                 <textarea class="form__textarea" id="form-textarea" name="form-text" rows="5" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
               </fieldset>

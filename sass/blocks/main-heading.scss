@@ -1,7 +1,7 @@
 .main-heading {
   background-color: $color-white;
   text-align: center;
-  padding-bottom: 6px;
+  padding-bottom: 19px;
 
   @media (min-width: $width-tablet) {
     margin-top: -2px;
@@ -11,13 +11,13 @@
 
 .main-heading__canvas {
   min-height: 158px;
-  margin-bottom: 39px;
+  margin-bottom: 37px;
   background-image: url("../img/text-sedona.svg"),
                     url("../img/bg-intro-triangle-mobile.svg"),
                     url("../img/bg-back-mobile@1x.jpg");
-  background-position: 50% 50%, 100% 100%, 50% 100%;
+  background-position: 44% 43%, 100% 100%, 50% 100%;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 229px 39px, 100% auto, 768px auto;
+  background-size: 100% 40px, 100% auto, 768px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/text-sedona.svg"),
@@ -55,6 +55,7 @@
 }
 
 .main-heading__canvas--index {
+  margin-bottom: 39px;
   min-height: 390px;
   background-image: url("../img/text-sedona-index.svg"),
                     url("../img/bg-intro-triangle-mobile.svg"),
@@ -101,13 +102,17 @@
 
 .main-heading__caption {
   margin-top: 0;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
   padding-left: 30px;
   padding-right: 30px;
   font-size: 18px;
   line-height: 1.45;
   font-weight: 700;
   color: $color-black;
+
+  &--index {
+    margin-bottom: 29px;
+  }
 
   @media (min-width: $width-tablet) {
     margin-bottom: 31px;
@@ -129,7 +134,11 @@
   padding-right: 20px;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.85;
+  line-height: 1.7;
   color: $color-brown-dark;
+
+  &--index {
+    line-height: 1.85;
+  }
 
 }
