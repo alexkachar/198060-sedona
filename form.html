@@ -45,16 +45,16 @@
             <div class="form__fieldset-cover">
               <fieldset class="form__fieldset form__fieldset--names">
                 <p class="form__fieldset-caption">Представьтесь:</p>
-                <p class="form__field-wrapper">
+                <p class="form__field-wrapper form__field-wrapper--names">
                   <label class="form__input-text-label" for="first-name">Имя*:</label>
                   <input class="form__input-text" id="first-name" name="first-name" type="text" placeholder="Петр" required>
                 </p>
-                <p class="form__field-wrapper">
+                <p class="form__field-wrapper form__field-wrapper--names">
                   <label class="form__input-text-label" for="family-name">Фамилия*:</label>
                   <input class="form__input-text" id="family-name" name="family-name" type="text" placeholder="Иванов" required>
                 </p>
-                <p class="form__field-wrapper">
-                  <label class="form__input-text-label" for="patronym">Отчество:</label>
+                <p class="form__field-wrapper form__field-wrapper--names">
+                  <label class="form__input-text-label form__input-text-label--patronym" for="patronym">Отчество:</label>
                   <input class="form__input-text form__input-text--patronym" id="patronym" name="patronym" type="text" placeholder="Александрович">
                 </p>
               </fieldset>
@@ -62,7 +62,7 @@
 
             <div class="form__fieldset-cover form__fieldset-cover--wide">
               <fieldset class="form__fieldset">
-                <p class="form__fieldset-caption">Контактная информация:</p>
+                <p class="form__fieldset-caption  form__fieldset-caption--lined">Контактная информация:</p>
                 <div class="form__contacts-wrapper">
                   <p class="form__field-wrapper form__field-wrapper--telephone form__field-wrapper--contacts">
                     <label class="form__input-text-label form__input-text-label--contacts" for="telephone">
@@ -71,7 +71,7 @@
                     </label>
                     <input class="form__input-text form__input-text--contacts form__input-text--telephone" id="telephone" name="telephone" type="tel" placeholder="Введите телефон" required>
                   </p>
-                  <p class="form__field-wrapper form__field-wrapper--contacts">
+                  <p class="form__field-wrapper form__field-wrapper--email form__field-wrapper--contacts">
                     <label class="form__input-text-label form__input-text-label--contacts" for="email">Электронная почта*:</label>
                     <input class="form__input-text form__input-text--contacts form__input-text--email" id="email" name="email" type="email" placeholder="Введите e-mail" required>
                   </p>
@@ -83,7 +83,7 @@
               <fieldset class="form__fieldset form__fieldset--radio">
                 <p class="form__fieldset-caption form__fieldset-caption--radio">Ваше общее впечатление:</p>
 
-                <ul class="form__input-list">
+                <ul class="form__input-list form__input-list--radio">
 
                   <li class="form__input-item  form__input-item--radio">
                     <label class="form__radio-label">
@@ -112,27 +112,27 @@
 
             <div class="form__fieldset-cover form__fieldset-cover--wide">
               <fieldset class="form__fieldset">
-                <p class="form__fieldset-caption">Посещенные достопримечательности:</p>
+                <p class="form__fieldset-caption form__fieldset-caption--lined">Посещенные <span class="form__span"><br></span> достопримечательности:</p>
                 <ul class="form__input-list form__input-list--checkboxes">
-                  <li class="form__input-item form__input-item--checkboxes">
+                  <li class="form__input-item form__input-item--devils-bridge form__input-item--checkboxes">
                     <label class="form__checkbox-label">
                       <input class="form__checkbox" name="places[]" value="devils-bridge" type="checkbox">
                       <span class="form__checkbox-span">Мост Дьявола</span>
                     </label>
                   </li>
-                  <li class="form__input-item form__input-item--checkboxes">
+                  <li class="form__input-item form__input-item--slide-park form__input-item--checkboxes">
                     <label class="form__checkbox-label">
                       <input class="form__checkbox" name="places[]" value="slide-park" type="checkbox">
                       <span class="form__checkbox-span">Слайд-парк</span>
                     </label>
                   </li>
-                  <li class="form__input-item form__input-item--checkboxes">
+                  <li class="form__input-item form__input-item--bell-mount form__input-item--checkboxes">
                     <label class="form__checkbox-label">
                       <input class="form__checkbox" name="places[]" value="bell-mount" type="checkbox">
                       <span class="form__checkbox-span">Гора-Колокол</span>
                     </label>
                   </li>
-                  <li class="form__input-item form__input-item--checkboxes">
+                  <li class="form__input-item form__input-item--red-rocks form__input-item--checkboxes">
                     <label class="form__checkbox-label">
                       <input class="form__checkbox" name="places[]" value="red-rocks" type="checkbox">
                       <span class="form__checkbox-span">Красные скалы</span>
@@ -144,7 +144,7 @@
 
             <div class="form__fieldset-cover form__fieldset-cover--textarea">
               <fieldset class="form__fieldset form__fieldset--textarea">
-                <label class="form__fieldset-caption form__textarea-label" for="form-textarea">Опишите свои эмоции:</label>
+                <label class="form__fieldset-caption form__fieldset-caption--lined form__textarea-label" for="form-textarea">Опишите свои эмоции:</label>
                 <textarea class="form__textarea" id="form-textarea" name="form-text" rows="5" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
               </fieldset>
               <div class="form__btn-cover">
@@ -169,7 +169,7 @@
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#" aria-label="twitter">
                 <span class="visually-hidden">Twitter</span>
-                <svg class="social__svg" width="17.5" height="14.663">
+                <svg class="social__svg" width="18" height="14">
                   <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -177,7 +177,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#" aria-label="facebook">
                 <span class="visually-hidden">Facebook</span>
-                <svg class="social__svg" width="17.5" height="14.663">
+                <svg class="social__svg" width="9" height="18">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -185,7 +185,7 @@
             <li class="social__item">
               <a class="social__link social__link--youtube" href="#"  aria-label="youtube">
                 <span class="visually-hidden">Youtube</span>
-                <svg class="social__svg" width="17.5" height="14.663">
+                <svg class="social__svg" width="20" height="14">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>

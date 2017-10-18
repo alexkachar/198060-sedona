@@ -58,9 +58,9 @@
   min-height: 229px;
   padding-top: 38px;
   background-image: url("../img/bg-triangle.svg");
-  background-position: 100% 0%;
+  background-position: 100% -1%;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 38px;
 
   @media (min-width: $width-tablet) {
     padding-top: 0px;
