@@ -15,6 +15,11 @@
   @media (min-width: $width-tablet) {
     flex-direction: row;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .form__fieldset-cover {
@@ -41,6 +46,13 @@
   }
 }
 
+.form__fieldset-cover--radio {
+
+  @media (min-width: $width-desktop) {
+    padding-left: 3px;
+  }
+}
+
 .form__fieldset {
   margin: 0;
   padding: 0;
@@ -61,11 +73,29 @@
 }
 
 .form__fieldset--names {
+  position: relative;
   padding-bottom: 4px;
 
   @media (min-width: $width-tablet) {
     padding-left: 57px;
     padding-right: 60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 80px;
+  }
+}
+
+.form__fieldset--names::before {
+
+  @media (min-width: $width-tablet) {
+    content: "";
+    position: absolute;
+    height: 292px;
+    width: 1px;
+    left: 0;
+    top: 27px;
+    background-color: $color-gray-dark-border;
   }
 }
 
@@ -95,6 +125,12 @@
     padding-right: 73px;
     padding-bottom: 13px;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 41px;
+    padding-right: 0;
+    padding-bottom: 11px;
+  }
 }
 
 .form__fieldset-caption {
@@ -120,6 +156,19 @@
     width: 100%;
     text-align: center;
     margin-top: 44px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 42px;
+    margin-bottom: 72px;
+  }
+}
+
+.form__fieldset-caption--places {
+
+  @media (min-width: $width-desktop) {
+    margin-top: 29px;
     margin-bottom: 22px;
   }
 }
@@ -155,13 +204,17 @@
 }
 
 .form__fieldset-caption--radio {
-  margin-top: 37px;
-  margin-left: 20px;
+  margin-top: 41px;
+  margin-left: -3px;
 
   @media (min-width: $width-tablet) {
     margin-left: 40px;
     margin-top: 20px;
     margin-bottom: 0px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 118px;
   }
 }
 
@@ -172,6 +225,10 @@
 
   @media (min-width: $width-tablet) {
     margin-bottom: 60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 58px;
   }
 }
 
@@ -205,6 +262,14 @@
   }
 }
 
+.form__textarea-wrapper {
+
+  @media (min-width: $width-desktop) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .form__fieldset--textarea {
   border-bottom: none;
   margin-bottom: 46px;
@@ -213,6 +278,12 @@
     padding-left: 60px;
     padding-right: 60px;
     margin-bottom: 51px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 53px;
   }
 }
 
@@ -229,6 +300,10 @@
     padding-left: 60px;
     padding-right: 60px;
     margin-bottom: 62px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 66px;
   }
 }
 
@@ -249,6 +324,7 @@
 
   @media (min-width: $width-desktop) {
     width: 480px;
+    padding-left: 149px;
   }
 }
 
@@ -299,6 +375,7 @@
 
   @media (min-width: $width-desktop) {
     margin-left: 0;
+    margin-top: 11px;
     flex-shrink: 0;
   }
 }
@@ -353,7 +430,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin-right: 80px;
+    margin-right: 77px;
   }
 }
 
@@ -414,6 +491,15 @@
   }
 }
 
+.form__field-wrapper--email {
+  margin-top: 1px;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 6px;
+    margin-top: -13px;
+  }
+}
+
 .form__contacts-wrapper {
   padding: 0;
   margin: 0;
@@ -426,7 +512,6 @@
     padding-left: 40px;
     padding-right: 40px;
   }
-
 
   @media (min-width: $width-desktop) {
     flex-direction: row;
@@ -445,7 +530,16 @@
   }
 
   @media (min-width: $width-desktop) {
-    flex-basis: 25%;
+    flex-basis: 20%;
+    margin-right: 59px;
+  }
+}
+
+.form__input-item--checkboxes:last-child {
+
+  @media (min-width: $width-desktop) {
+    margin-left: -22px;
+    margin-right: 0;
   }
 }
 

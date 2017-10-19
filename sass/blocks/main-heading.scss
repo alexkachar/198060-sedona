@@ -7,6 +7,10 @@
     margin-top: -2px;
     padding-bottom: 54px;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 39px;
+  }
 }
 
 .main-heading--index {
@@ -36,7 +40,7 @@
   @media (min-width: $width-tablet) {
     min-height: 292px;
     margin-bottom: 75px;
-    background-position: 44% 43%, 100% 100%, 50% 100%;
+    background-position: 50% 45%, 100% 100%, 50% 100%;
     background-image: url("../img/text-sedona.svg"),
                       url("../img/bg-intro-triangle-tablet.svg"),
                       url("../img/bg-back-tablet@1x.jpg");
