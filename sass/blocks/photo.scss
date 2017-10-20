@@ -4,43 +4,197 @@
   justify-content: flex-start;
   align-items: center;
   background-color: $color-white;
+
   @media (min-width: $width-tablet) {
+    padding-left: 60px;
+    padding-right: 60px;
     flex-direction: row;
     flex-wrap: wrap;
   }
+  @media (min-width: $width-desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-.photo__item {
-  width: 50%;
-}
-
-.photo__item--wide {
+.photo__post {
   width: 100%;
+  border-bottom: 1px solid $color-gray-moderate;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 22px;
+
+  @media (min-width: $width-tablet) {
+    width: 50%;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: none;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 33.33%;
+  }
+}
+
+.photo__post:first-of-type {
+  border-top: 1px solid $color-gray-moderate;
+
+  @media (min-width: $width-tablet) {
+    border-top: none;
+  }
+}
+
+.photo__post--wide {
+  width: 100%;
+}
+
+.photo__img {
+  width: 100%;
+  height: 100%;
 }
 
 .photo__figure {
   width: 100%;
   margin: 0;
   padding: 0;
+  height: 280px;
+
+  @media (min-width: $width-tablet) {
+    height: 267px;
+  }
+}
+
+.photo__figure--wide {
+
+  @media (min-width: $width-tablet) {
+    height: 400px;
+  }
+}
+
+.photo__info {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 16px;
+  padding-bottom: 20px;
+
+  @media (min-width: $width-tablet) {
+    height: 80px;
+    padding-top: 15px;
+    padding-left: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $color-gray-light-bg;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 21px;
+    margin-top: -80px;
+    background-color: $color-black-transparent;
+  }
+}
+
+.photo__info--bg-dark{
+
+  @media (min-width: $width-tablet) {
+    background-color: $color-gray-moderate-post;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-color: $color-black-transparent;
+  }
 }
 
 .photo__caption {
+  margin-top: 0;
+  margin-bottom: 1px;
   font-size: 14px;
   line-height: 1.7;
   font-weight: 700;
   color: $color-black;
+
+  @media (min-width: $width-desktop) {
+    color: $color-white;
+  }
+}
+
+.photo__likes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .photo__author {
+  margin: 0;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.7;
   font-weight: 400;
   color: $color-brown-dark;
+  text-transform: none;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    color: $color-white;
+  }
 }
 
 .photo__like-count {
+  margin-left: 15px;
+  margin-bottom: -1px;
+  height: 22px;
   font-size: 14px;
   line-height: 1.7;
   font-weight: 700;
   color: $color-black;
+
+
+  @media (min-width: $width-tablet) {
+    margin-left: 11px;
+    margin-bottom: -4px;
+  }
+
+  @media (min-width: $width-desktop) {
+    color: $color-white;
+  }
+}
+
+.photo__like-btn {
+  width: 22px;
+  height: 20px;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.photo__btn-svg {
+  width: 22px;
+  height: 20px;
+  fill: $color-black;
+  opacity: 0.3;
+
+  @media (min-width: $width-desktop) {
+    fill: $color-white;
+    opacity: 1;
+  }
+}
+
+.photo__like-btn:hover .photo__btn-svg,
+.photo__like-btn:focus .photo__btn-svg {
+  fill: $color-blue-light;
+  opacity: 1;
+}
+
+.photo__like-btn:active .photo__btn-svg {
+  fill: $color-black;
+  opacity: 1;
 }

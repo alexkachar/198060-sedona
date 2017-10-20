@@ -1,4 +1,5 @@
 .page-wrapper {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   @media (min-width: $width-tablet) {
@@ -6,5 +7,6 @@
   }
   @media (min-width: $width-desktop) {
     width: $width-desktop;
+    box-shadow: 0 5px 15px 0 rgba(0, 01, 01, 0.3);
   }
 }

@@ -1,6 +1,12 @@
 .social {
+  margin-bottom: 38px;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 114px;
+  }
+
   @media (min-width: $width-desktop) {
-    margin-left: 255px;
+    margin-left: 257px;
   }
 }
 
@@ -25,12 +31,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 47px;
+  width: 46px;
   height: 48px;
   background-color: $color-blue-light;
 }
 
-.social__link path {
+.social__svg {
   fill: $color-white;
 }
 

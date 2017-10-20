@@ -1,23 +1,52 @@
 .video {
   min-height: 520px;
   text-align: center;
-  padding-top: 39px;
+  padding-top: 14px;
+
   @media (min-width: $width-tablet) {
-    padding-top: 69px;
+    padding-top: 32px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 80px;
   }
+
   @media (min-width: $width-desktop) {
-    padding-top: 73px;
+    padding-top: 36px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 125px;
   }
 }
 
 .video__caption {
   font-size: 18px;
+  margin-bottom: 27px;
   font-weight: 700;
   line-height: 1.45;
+
+  @media (min-width: $width-tablet) {
+    font-size: 30px;
+    line-height: 1.15;
+  }
 }
 
 .video__text {
-  font-style: 14px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-bottom: 38px;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 105px;
+    padding-right: 105px;
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 178px;
+    padding-right: 178px;
+    margin-bottom: 73px;
+  }
 }

@@ -1,3 +1,5 @@
+@import-normalize;
+
 :root {
   font-family: $font;
   font-size: 14px;
@@ -6,6 +8,10 @@
   color: $color-brown-dark;
   text-transform: uppercase;
   box-sizing: border-box;
+  counter-reset: article-numbered;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
@@ -18,6 +24,7 @@
 
 img {
   max-width: 100%;
+  min-height: 1px;
   height: auto;
 }
 
@@ -34,22 +41,33 @@ img {
 
 //обводки
 
-.backlight-yellow {
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-}
-
-.backlight-red {
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
-}
-
-.backlight-green {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
-
-.backlight-blue {
-  background: rgba(42, 0, 225, 0.2);
-  box-shadow: 0 0 0 3px blue;
-}
+// main,
+// article {
+//   background: rgba(234, 255, 45, 0.2);
+//   box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+// }
+//
+// header,
+// fieldset {
+//   background: rgba(255, 45, 82, 0.2);
+//   box-shadow: 0 0 0 1px rgb(255, 45, 82);
+// }
+//
+// div,
+// a {
+//   background: rgba(255, 174, 0, 0.2);
+//   box-shadow: 0 0 0 1px rgb(255, 174, 0);
+// }
+//
+// footer,
+// li {
+//   background: rgba(0, 128, 0, 0.2);
+//   box-shadow: 0 0 0 1px green;
+// }
+//
+// section,
+// ul,
+// p {
+//   background: rgba(42, 0, 225, 0.2);
+//   box-shadow: 0 0 0 1px blue;
+// }

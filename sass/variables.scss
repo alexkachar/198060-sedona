@@ -1,15 +1,34 @@
-$font: 'PT Sans', Arial, sans-serif;
+$font: "PT Sans", arial, sans-serif;
 
 //цвета
 
 $color-blue-light: #81b3d2;
 $color-blue-moderate: #669ec0;
+$color-blue-dark: #5496bd;
+$color-blue-dark-border: #678fa8;
 $color-white: #ffffff;
+$color-white-transperent: rgba(255, 255, 255, 0.3);
 $color-black: #000000;
+$color-black-transparent: rgba(0, 0, 0, 0.3);
+$color-black-transparent-light: rgba(0, 0, 0, 0.3);
+$color-black-transparent-dark: rgba(0, 0, 0, 0.6);
 $color-brown-dark: #333333;
+$color-brown-dark-transparent: rgba(51, 51, 51, 0.3);
 $color-gray-light: #eeeeee;
+$color-gray-light-bg: #f2f2f2;
+$color-gray-moderate: #e5e5e5;
+$color-gray-moderate-bg: #e6e6e6;
+$color-gray-moderate-post: #eaeaea;
+$color-gray-dark: #d6d6d6;
+$color-gray-dark-border: #dbdbdb;
+$color-gray-dark-bg: #d5d5d5;
 
 //ширина вьюпорта
 
-$width-tablet: 756px;
+$width-tablet: 768px;
 $width-desktop: 1200px;
+
+//ретининзация
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

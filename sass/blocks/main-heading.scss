@@ -1,31 +1,219 @@
 .main-heading {
-  min-height: 348px;
-  padding-top: 200px;
   background-color: $color-white;
-  // background-image: url('../img/bg-back-mobile@1x.jpg');
-  // background-repeat: no-repeat;
-  // background-position: top center;
   text-align: center;
-  &--index {
-    min-height: 628px;
-    padding-top: 390px;
+  padding-bottom: 19px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: -2px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 39px;
   }
 }
 
-@media (min-width: $width-tablet) {
-  .main-heading {
-    min-height: 540px;
-    padding-top: 368px;
-  &--index {
-    min-height: 724px;
-    padding-top: 520px;
+.main-heading--index {
+
+  @media (min-width: $width-tablet) {
+    margin-top: -2px;
+    padding-bottom: 49px;
+  }
+}
+
+.main-heading--photo {
+  padding-bottom: 28px;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 71px;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 73px;
+  }
+}
+
+
+.main-heading__canvas {
+  min-height: 158px;
+  margin-bottom: 37px;
+  background-image: url("../img/text-sedona.svg"),
+                    url("../img/bg-intro-triangle-mobile.svg"),
+                    url("../img/bg-back-mobile@1x.jpg");
+  background-position: 44% 43%, 100% 104.5%, 50% 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 100% 40px, 100% 37px, 768px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/text-sedona.svg"),
+                      url("../img/bg-intro-triangle-mobile.svg"),
+                      url("../img/bg-back-mobile@2x.jpg");
+  }
+
+  @media (min-width: $width-tablet) {
+    min-height: 292px;
+    margin-bottom: 75px;
+    background-position: 50% 45%, 100% 100%, 50% 100%;
+    background-image: url("../img/text-sedona.svg"),
+                      url("../img/bg-intro-triangle-tablet.svg"),
+                      url("../img/bg-back-tablet@1x.jpg");
+    background-size: 458px 80px, 100% auto, 768px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/text-sedona.svg"),
+                            url("../img/bg-intro-triangle-tablet.svg"),
+                            url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    min-height: 303px;
+    margin-bottom: 112px;
+    background-position: 50% 46%, 100% 100%, 50% 100%;
+    background-image: url("../img/text-sedona.svg"),
+                      url("../img/bg-intro-triangle-desktop.svg"),
+                      url("../img/bg-back-desktop@1x.jpg");
+    background-size: 462px 80px, 100% auto, 1200px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/text-sedona.svg"),
+                        url("../img/bg-intro-triangle-desktop.svg"),
+                        url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+}
+
+.main-heading__canvas--index {
+  margin-bottom: 39px;
+  min-height: 390px;
+  background-image: url("../img/text-sedona-index.svg"),
+                    url("../img/bg-intro-triangle-mobile.svg"),
+                    url("../img/bg-back-mobile@1x.jpg");
+  background-position: 50% 50%, 100% 101.5%, 50% 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 280px 215px, 100% 37px, 768px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/text-sedona-index.svg"),
+                      url("../img/bg-intro-triangle-mobile.svg"),
+                      url("../img/bg-back-mobile@2x.jpg");
+  }
+
+  @media (min-width: $width-tablet) {
+    min-height: 520px;
+    margin-bottom: 48px;
+    background-image: url("../img/text-sedona-index.svg"),
+                      url("../img/bg-intro-triangle-tablet.svg"),
+                      url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 46%, 100% 100%, 50% 100%;
+    background-size: 460px 350px, 100% auto, 768px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/text-sedona-index.svg"),
+                            url("../img/bg-intro-triangle-tablet.svg"),
+                            url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: url("../img/text-sedona-index.svg"),
+                      url("../img/bg-intro-triangle-desktop.svg"),
+                      url("../img/bg-back-desktop@1x.jpg");
+    background-size: 460px 350px, 100% auto, 1200px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/text-sedona-index.svg"),
+                        url("../img/bg-intro-triangle-desktop.svg"),
+                        url("../img/bg-back-desktop@2x.jpg");
     }
   }
 }
 
 .main-heading__caption {
+  margin-top: 0;
+  margin-bottom: 28px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: 18px;
   line-height: 1.45;
   font-weight: 700;
   color: $color-black;
+
+  &--index {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 31px;
+    padding-left: 90px;
+    padding-right: 90px;
+    font-size: 30px;
+    line-height: 0.85;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-right: 350px;
+    padding-left: 350px;
+  }
+}
+
+.main-heading__caption--index {
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 31px;
+    padding-left: 90px;
+    padding-right: 90px;
+    font-size: 21px;
+    line-height: 1.25;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-right: 350px;
+    padding-left: 350px;
+  }
+}
+.main-heading__text {
+  margin-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-brown-dark;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 136px;
+    padding-right: 144px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 375px;
+    padding-right: 375px;
+  }
+}
+
+.main-heading__text--photo {
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 170px;
+    padding-right: 170px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 380px;
+    padding-right: 380px;
+  }
+}
+
+.main-heading__text--index {
+  line-height: 1.85;
+  padding-left: 14px;
+  padding-right: 20px;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }

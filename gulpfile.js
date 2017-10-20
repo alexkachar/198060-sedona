@@ -5,6 +5,7 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var normalize = require("postcss-normalize");
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
@@ -12,7 +13,8 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      normalize()
     ]))
     .pipe(gulp.dest("css"))
     .pipe(server.stream());
