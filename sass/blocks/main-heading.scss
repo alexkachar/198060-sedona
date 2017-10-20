@@ -21,6 +21,19 @@
   }
 }
 
+.main-heading--photo {
+  padding-bottom: 28px;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 71px;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 73px;
+  }
+}
+
+
 .main-heading__canvas {
   min-height: 158px;
   margin-bottom: 37px;
@@ -56,6 +69,7 @@
   @media (min-width: $width-desktop) {
     min-height: 303px;
     margin-bottom: 112px;
+    background-position: 50% 46%, 100% 100%, 50% 100%;
     background-image: url("../img/text-sedona.svg"),
                       url("../img/bg-intro-triangle-desktop.svg"),
                       url("../img/bg-back-desktop@1x.jpg");
@@ -175,6 +189,21 @@
   @media (min-width: $width-desktop) {
     padding-left: 375px;
     padding-right: 375px;
+  }
+}
+
+.main-heading__text--photo {
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 170px;
+    padding-right: 170px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 380px;
+    padding-right: 380px;
   }
 }
 

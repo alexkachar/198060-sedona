@@ -1,33 +1,38 @@
 .modal {
-  border: 1px solid red;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 160px);
   width: 320px;
-  min-height: 280px;
   padding-top: 30px;
-  padding-left: 56px;
-  padding-right: 56px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 35px;
   background-color: $color-white;
   text-align: center;
 
   @media (min-width: $width-tablet) {
+    left: calc(50% - 200px);
+    width: 400px;
+    padding-top: 54px;
+    padding-bottom: 50px;
     box-shadow: 0 5px 15px 0 rgba(0, 01, 01, 0.3);
   }
 }
 
-.modal--failure {
-  @media (min-width: $width-tablet) {
-    width: 400px;
-    min-height: 347px;
-  }
+.modal--js-show {
+  display: block;
 }
 
 .modal--success {
-  min-height: 323px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 20px;
   background-image: linear-gradient(to top, $color-gray-light-bg 98px, $color-white 98px);
+
   @media (min-width: $width-tablet) {
     width: 640px;
-    min-height: 348px;
+    padding-bottom: 43px;
     background-image: linear-gradient(to top, $color-gray-light-bg 146px,
                                               $color-white 146px);
   }
@@ -35,36 +40,66 @@
 
 .modal__caption {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.45;
   color: $color-black;
+
+  @media (min-width: $width-tablet) {
+    font-size: 30px;
+    line-height: 1.35;
+    margin-bottom: 24px;
+  }
 }
 
 .modal__text {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
   color: $color-brown-dark;
 
-  &--success {
-    padding-left: 30px;
-    padding-right: 30px;
+  @media (min-width: $width-tablet) {
+    margin-bottom: 34px;
+  }
+}
+
+.modal__text--success {
+  margin-bottom: 55px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-bottom: 80px;
   }
 }
 
 .modal__btn {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  height: 58px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.45;
   text-transform: uppercase;
+}
 
-  &--failure {
-    width: 180px;
+.modal__btn--success {
+  width: 100%;
+
+  @media (min-width: $width-tablet) {
+    width: 458px;
+    font-size: 21px;
+    line-height: 1.25;
   }
+}
 
-  &--success {
-    width: 100%;
+.modal__btn--failure {
+  width: 180px;
+
+  @media (min-width: $width-tablet) {
+    width: 272px;
   }
 }

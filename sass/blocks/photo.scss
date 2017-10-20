@@ -77,11 +77,12 @@
   position: relative;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 16px;
+  padding-bottom: 20px;
 
   @media (min-width: $width-tablet) {
     height: 80px;
+    padding-top: 15px;
     padding-left: 20px;
     flex-direction: row;
     justify-content: space-between;
@@ -89,6 +90,7 @@
   }
 
   @media (min-width: $width-desktop) {
+    padding-left: 21px;
     margin-top: -80px;
     background-color: $color-black-transparent;
   }
@@ -107,7 +109,7 @@
 
 .photo__caption {
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 1px;
   font-size: 14px;
   line-height: 1.7;
   font-weight: 700;
@@ -119,6 +121,10 @@
 }
 
 .photo__likes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   width: 85px;
   margin-top: 0;
   margin-bottom: 0;
@@ -126,11 +132,12 @@
 
 .photo__author {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.7;
   font-weight: 400;
   color: $color-brown-dark;
+  text-transform: none;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 0;
@@ -142,10 +149,19 @@
 }
 
 .photo__like-count {
+  margin-left: 15px;
+  margin-bottom: -1px;
+  height: 22px;
   font-size: 14px;
   line-height: 1.7;
   font-weight: 700;
   color: $color-black;
+
+
+  @media (min-width: $width-tablet) {
+    margin-left: 11px;
+    margin-bottom: -4px;
+  }
 
   @media (min-width: $width-desktop) {
     color: $color-white;

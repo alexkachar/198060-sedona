@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Седона / Оставьте свой отзыв</title>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svguse.min.js"></script>
   </head>
   <body>
     <div class="page-wrapper">
@@ -42,7 +44,7 @@
           <h2 class="visually-hidden">Форма отзыва</h2>
           <form class="form__self" action="https://echo.htmlacademy.ru" method="post">
 
-            <div class="form__fieldset-cover">
+            <div class="form__fieldset-cover form__fieldset-cover--names">
               <fieldset class="form__fieldset form__fieldset--names">
                 <p class="form__fieldset-caption">Представьтесь:</p>
                 <p class="form__field-wrapper form__field-wrapper--names">
@@ -62,7 +64,7 @@
 
             <div class="form__fieldset-cover form__fieldset-cover--wide">
               <fieldset class="form__fieldset">
-                <p class="form__fieldset-caption  form__fieldset-caption--lined">Контактная информация:</p>
+                <p class="form__fieldset-caption form__fieldset-caption--contacts  form__fieldset-caption--lined">Контактная информация:</p>
                 <div class="form__contacts-wrapper">
                   <p class="form__field-wrapper form__field-wrapper--telephone form__field-wrapper--contacts">
                     <label class="form__input-text-label form__input-text-label--contacts" for="telephone">
@@ -117,7 +119,7 @@
                   <li class="form__input-item form__input-item--devils-bridge form__input-item--checkboxes">
                     <label class="form__checkbox-label">
                       <input class="form__checkbox" name="places[]" value="devils-bridge" type="checkbox">
-                      <span class="form__checkbox-span">Мост Дьявола</span>
+                      <span class="form__checkbox-span">Мост&nbsp;Дьявола</span>
                     </label>
                   </li>
                   <li class="form__input-item form__input-item--slide-park form__input-item--checkboxes">
@@ -135,7 +137,7 @@
                   <li class="form__input-item form__input-item--red-rocks form__input-item--checkboxes">
                     <label class="form__checkbox-label">
                       <input class="form__checkbox" name="places[]" value="red-rocks" type="checkbox">
-                      <span class="form__checkbox-span">Красные скалы</span>
+                      <span class="form__checkbox-span">Красные&nbsp;скалы</span>
                     </label>
                   </li>
                 </ul>
@@ -208,13 +210,13 @@
 
       </footer>
 
-      <section class="modal modal--failure modal--hidden">
+      <section class="modal modal--failure modal--js-show">
         <h2 class="modal__caption">Что-то пошло не&nbsp;так!</h2>
         <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить</p>
         <button class="btn modal__btn modal__btn--failure" type="button">Ок</button>
       </section>
 
-      <section class="modal modal--success modal--hidden">
+      <section class="modal modal--success modal--js-show">
         <h2 class="modal__caption">Ваш отзыв отправлен!</h2>
         <p class="modal__text modal__text--success">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;опубликуем его на&nbsp;сайте.</p>
         <button class="btn modal__btn modal__btn--success btn" type="button">Закрыть окно</button>
