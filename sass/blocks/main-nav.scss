@@ -1,18 +1,20 @@
 .main-nav {
   position: relative;
-  min-height: 223px;
 
   @media (min-width: $width-tablet) {
     min-height: 55px;
   }
 }
 
-.main-nav--js-close {
-  display: none;
-}
-
-.main-nav--js-show {
-  display: block;
+.main-nav__list--hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-nav__list {
@@ -27,6 +29,7 @@
   list-style: none;
 
   @media (min-width: $width-tablet) {
+    display: flex;
     padding-top: 14px;
     flex-direction: row;
     justify-content: flex-start;
@@ -35,6 +38,7 @@
     padding-right: 26px;
     background-color: $color-white;
   }
+
   @media (min-width: $width-desktop) {
     padding-left: 90px;
     padding-right: 70px;
@@ -130,8 +134,6 @@
   color: $color-black-transparent-light;
 }
 
-
-
 .main-nav__toggle {
   width: 23px;
   height: 22px;
@@ -153,4 +155,12 @@
   top: 17px;
   right: 21px;
   background-image: url("../img/icon-cross.svg");
+}
+
+.main-nav__nav-mock {
+  min-height: 56px;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
 }
