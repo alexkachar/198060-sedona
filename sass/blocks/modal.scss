@@ -1,7 +1,7 @@
 .modal {
   display: none;
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 25%;
   left: calc(50% - 160px);
   width: 320px;
   padding-top: 30px;
@@ -31,6 +31,7 @@
   background-image: linear-gradient(to top, $color-gray-light-bg 98px, $color-white 98px);
 
   @media (min-width: $width-tablet) {
+    left: calc(50% - 320px);
     width: 640px;
     padding-bottom: 43px;
     background-image: linear-gradient(to top, $color-gray-light-bg 146px,

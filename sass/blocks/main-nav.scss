@@ -1,17 +1,14 @@
 .main-nav {
-  display: none;
   position: relative;
   min-height: 223px;
-  background-color: $color-blue-light;
 
   @media (min-width: $width-tablet) {
     min-height: 55px;
-    background-color: $color-white;
   }
 }
 
-.main-nav--no-js {
-  display: block;
+.main-nav--js-close {
+  display: none;
 }
 
 .main-nav--js-show {
@@ -26,6 +23,7 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  background-color: $color-blue-light;
   list-style: none;
 
   @media (min-width: $width-tablet) {
@@ -35,6 +33,7 @@
     align-items: center;
     padding-left: 49px;
     padding-right: 26px;
+    background-color: $color-white;
   }
   @media (min-width: $width-desktop) {
     padding-left: 90px;

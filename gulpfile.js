@@ -7,8 +7,10 @@ var postcss = require("gulp-postcss");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
+var insert = require('gulp-insert');
 var normalize = require("postcss-normalize");
 var minify = require("gulp-csso");
+var webp = require("gulp-webp");
 var imagemin = require("gulp-imagemin");
 var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
@@ -46,8 +48,8 @@ gulp.task("sprite", function () {
     .pipe(svgstore({
       inlineSvg: true
     }))
-    .pipe(rename("build/sprite.svg"))
-    .pipe(gulp.dest("img"));
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img/"));
 });
 
 gulp.task("html", function () {
@@ -58,12 +60,21 @@ gulp.task("html", function () {
   .pipe(gulp.dest("build"));
 });
 
+
+gulp.task("webp", function () {
+  return gulp.src("img/**/*.{png,jpg}")
+  .pipe(webp({quality: 80}))
+  .pipe(gulp.dest("build/img"));
+});
+
+
 gulp.task("build", function (done) {
   run(
     "clean",
     "copy",
     "style",
     "sprite",
+    "webp",
     "html",
     done
   );
