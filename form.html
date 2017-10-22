@@ -12,19 +12,25 @@
     <div class="page-wrapper">
       <header class="page-header">
 
-        <nav class="main-nav main-nav--no-js">
+        <nav class="main-nav">
 
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+          <button class="main-nav__toggle main-nav__toggle--open" type="button" aria-label="Открыть меню">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html" >Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html" >Главная</a>
+              <button class="main-nav__toggle main-nav__toggle--close" type="button" aria-label="Открыть меню">
+                <span class="visually-hidden">Закрыть меню</span>
+              </button>
+            </li>
             <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и&nbsp;видео</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
         </nav>
+
+        <div class="main-nav__nav-mock"></div>
 
         <a class="page-header__logo"  href="index.html">
           <span class="visually-hidden">Sedona logo</span>
@@ -203,25 +209,26 @@
             Pазработано
             <span class="visually-hidden">HTML Academy</span>
             <svg class="copyright__svg" width="26.943" height="34.09">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </section>
 
       </footer>
 
-      <section class="modal modal--failure modal--js-show">
+      <section class="modal modal--failure">
         <h2 class="modal__caption">Что-то пошло не&nbsp;так!</h2>
         <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить</p>
         <button class="btn modal__btn modal__btn--failure" type="button">Ок</button>
       </section>
 
-      <section class="modal modal--success modal--js-show">
+      <section class="modal modal--success">
         <h2 class="modal__caption">Ваш отзыв отправлен!</h2>
         <p class="modal__text modal__text--success">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;опубликуем его на&nbsp;сайте.</p>
         <button class="btn modal__btn modal__btn--success btn" type="button">Закрыть окно</button>
       </section>
 
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

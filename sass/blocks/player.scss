@@ -112,10 +112,12 @@
   background: none;
   border: none;
   cursor: pointer;
+  fill: #5c6870;
 
   @media (min-width: $width-tablet) {
     align-self: auto;
     margin-bottom: 0;
+    fill: $color-white;
   }
 }
 
@@ -136,6 +138,7 @@
   @media (min-width: $width-tablet) {
     margin-left: 35px;
     margin-bottom: 0;
+    fill: $color-white;
   }
 
   @media (min-width: $width-desktop) {
@@ -150,6 +153,7 @@
 
   @media (min-width: $width-tablet) {
     margin-bottom: 0;
+    fill: $color-white;
   }
 }
 
@@ -160,17 +164,10 @@
   @media (min-width: $width-tablet) {
     margin-right: 41px;
     margin-bottom: 0;
+    fill: $color-white;
   }
 
   @media (min-width: $width-desktop) {
     margin-right: 42px;
-  }
-}
-
-.player__btn {
-  fill: #5c6870;
-
-  @media (min-width: $width-tablet) {
-    fill: $color-white;
   }
 }
