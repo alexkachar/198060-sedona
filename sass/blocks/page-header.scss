@@ -32,3 +32,11 @@
     background-image: url("../img/logo-sedona-desktop.svg");
   }
 }
+
+.page-header__nav-mock {
+  min-height: 56px;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}

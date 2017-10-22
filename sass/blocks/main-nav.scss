@@ -15,6 +15,17 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  @media (min-width: $width-tablet) {
+    position: inherit;
+    clip: inherit;
+    margin: 0;
+    height: 42px;
+    padding-left: 49px;
+    padding-right: 26px;
+    overflow: inherit;
+    width: inherit;
+  }
 }
 
 .main-nav__list {
@@ -31,11 +42,11 @@
   @media (min-width: $width-tablet) {
     display: flex;
     padding-top: 14px;
+    padding-left: 49px;
+    padding-right: 26px;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 49px;
-    padding-right: 26px;
     background-color: $color-white;
   }
 
@@ -155,12 +166,4 @@
   top: 17px;
   right: 21px;
   background-image: url("../img/icon-cross.svg");
-}
-
-.main-nav__nav-mock {
-  min-height: 56px;
-
-  @media (min-width: $width-tablet) {
-    display: none;
-  }
 }

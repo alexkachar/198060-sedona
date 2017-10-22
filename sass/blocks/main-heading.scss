@@ -14,6 +14,7 @@
 }
 
 .main-heading--index {
+  padding-bottom: 6px;
 
   @media (min-width: $width-tablet) {
     margin-top: -2px;
@@ -85,7 +86,7 @@
 
 .main-heading__canvas--index {
   margin-bottom: 39px;
-  min-height: 390px;
+  min-height: 389px;
   background-image: url("../img/text-sedona-index.svg"),
                     url("../img/bg-intro-triangle-mobile.svg"),
                     url("../img/bg-back-mobile@1x.jpg");

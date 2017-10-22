@@ -22,9 +22,10 @@ gulp.task("style", function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
+    .pipe(insert.prepend('@import-normalize;'))
     .pipe(postcss([
-      autoprefixer(),
-      normalize()
+      normalize(),
+      autoprefixer()
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
